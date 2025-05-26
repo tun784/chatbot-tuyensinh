@@ -1,3 +1,8 @@
+body.font-roboto { font-family: 'Roboto', sans-serif; }
+#chat-box::-webkit-scrollbar { width: 6px; }
+#chat-box::-webkit-scrollbar-track { background: #f1f1f1; }
+#chat-box::-webkit-scrollbar-thumb { background: #bbb; border-radius: 3px; }
+#chat-box .badge { padding: 0.75em 1em; font-size: 1rem; }
 body {
   font-family: sans-serif;
   background: #f1f1f1;

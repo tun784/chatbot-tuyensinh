@@ -1,0 +1,76 @@
+Tiêu đề: Ngành Công nghệ thực phẩm
+❌ Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
+1. MỤC TIÊU ĐÀO TẠO
+Đào tạo kỹ sư trình độ đại học ngành Công nghệ thực phẩm có kiến thức chuyên môn toàn diện, có kiến thức lý thuyết và kỹ năng thực hành chuyên sâu, sáng tạo và giải quyết những vấn đề liên quan đến Công nghệ thực phẩm;
+Kiến thức cơ bản về toán học, khoa học tự nhiên, đáp ứng cho việc tiếp thu các kiến thức giáo dục chuyên nghiệp và khả năng học tập ở trình độ cao hơn;
+Các kiến thức cơ sở ngành và chuyên ngành giúp người học đủ năng lực phân tích, phát hiện, giải quyết các vấn đề liên quan đến sản xuất thực phẩm. Từ đó, phát huy tính sáng tạo trong hoạt động nghề nghiệp, khả năng tự học và tự nghiên cứu;
+Khả năng tư duy, kỹ năng cá nhân, nghề nghiệp, giao tiếp, làm việc nhóm, đạo đức nghề nghiệp đủ để làm việc trong môi trường làm việc liên ngành, đa văn hóa và năng động.
+2. CƠ HỘI NGHỀ NGHIỆP
+Sinh viên tốt nghiệp ngành Công nghệ thực phẩm có thể làm việc ở những vị trí như:
+Kỹ sư quản lý và điều hành trong các nhà máy sản xuất thực phẩm: quản lý sản xuất, quản lý và vận hành dây chuyền thiết bị, phòng đảm bảo chất lượng, phòng kế hoạch vật tư...
+Chuyên viên nghiên cứu và phát triển sản phẩm (R&D). Chuyên viên đánh giá nhà cung cấp, chuyên viên đảm bảo chất lượng của hệ thống siêu thị, chuỗi thức ăn nhanh, chuỗi nhà hàng, các công ty cung cấp suất ăn công nghiệp... Chuyên viên phòng phân tích chất lượng thực phẩm của công ty thực phẩm hoặc các trung tâm phân tích- đo lường chất lượng. Chuyên viên thanh tra, đánh giá vệ sinh an toàn thực phẩm thuộc Cục quản lý vệ sinh an toàn thực phẩm hoặc Sở Công thương.
+Chuyên gia đánh giá các hệ thống quản lý chất lượng và hệ thống quản lý an toàn thực phẩm tại các công ty chuyên về đánh giá và cấp chứng nhận chất lượng.
+Nghiên cứu viên, giảng viên trong tại các trường đại học và cao đẳng, các trung tâm phân tích, các viện nghiên cứu.
+3. ĐIỀU KIỆN TUYỂN SINH
+--- Nội dung bổ sung sau 3. ĐIỀU KIỆN TUYỂN SINH ---
+Phương thức tuyển sinh:
+Phương thức tuyển sinh:
+1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
+2. Xét tuyển học bạ THPT.
+3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
+4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
+5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
+Tổ hợp xét tuyển:
+Tổ hợp xét tuyển:
+A00 – Toán học, Vật lí, Hóa học
+B00 – Toán học, Hoá học, Sinh học
+B08 – Toán học, Sinh học, Tiếng Anh
+D07– Toán học, Hoá học, Tiếng Anh
+--- Kết thúc phần bổ sung ---
+4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+Các môn học chuyên ngành tiêu biểu
+Công nghệ chế biến thực phẩm
+Công nghệ sau thu hoạch
+Thiết kế công nghệ và nhà máy thực phẩm
+Công nghệ bao bì, đóng gói thực phẩm
+Ứng dụng tin học trong công nghệ thực phẩm
+Phát triển sản phẩm
+Đảm bảo chất lượng và luật thực phẩm
+Công nghệ sản xuất/chế biến rượu, bia, nước giải khát; rau quả; dầu thực vật; đường, bánh, kẹo; thịt, trứng, thủy sản; trà, cà phê, ca cao; lương thực, nước chấm, gia vị…
+Thực hành công nghệ sản xuất/chế biến rượu, bia, nước giải khát; rau quả; dầu thực vật; đường, bánh, kẹo; thịt, trứng, thủy sản; trà, cà phê, ca cao; lương thực, nước chấm, gia vị…
+Thực hành thiết kế và kiểm tra bao bì thực phẩm
+Thực phẩm chức năng
+Nghiên cứu người tiêu dùng
+Quản lý chuỗi cung ứng và truy nguyên nguồn gốc thực phẩm
+Quản lý cho kỹ sư
+Thực hành tổ chức và huấn luyện hội đồng cảm quan
+Thực hành kỹ thuật hiện đại trong công nghệ thực phẩm
+Thực hành ứng dụng công nghệ sinh học trong công nghệ thực phẩm
+Đồán kỹ thuật thực phẩm
+Đồ án phát triển sản phẩm thực phẩm
+Kiến tập
+Thực tập tốt nghiệp
+Khóa luận tốt nghiệp
+Những tố chất phù hợp với ngành Công nghệ thực phẩm
+Ý thức tổ chức, kỷ luật;
+Khả năng đọc, phân tích, tổng hợp,
+Tư duy logic, khả năng tranh luận, phản biện;
+Khả năng làm việc độc lập và làm việc nhóm;
+Tính trung thực, khách quan và công bằng trong xử lý công việc;
+Khả năng giao tiếp, trình bày, thuyết phục, thương lượng;
+Năng động, sáng tạo, kiên định mục tiêu.
+5. QUYỀN LỢI CỦA NGƯỜI HỌC
+Được học tập trong môi trường hiện đại, năng động.
+Được đào tạo kiến thức lý luận và kỹ năng nghề nghiệp phù hợp với yêu cầu của các doanh nghiệp và các tổ chức hành nghề luật;
+Được hỗ trợ tham gia các đợt kiến tập, giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
+Được tham gia các hội thảo chuyên ngành, sinh hoạt học thuật tại Câu lạc bộ Khoa học và Công nghệ thực phẩm;
+Được tham gia các chương trình trao đổi sinh viên với các trường Đại học danh tiếng trên thế giới.
+Được tham gia các hoạt động văn hóa, văn nghệ và thể thao cấp khoa và cấp trường.
+Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
+Được hỗ trợ vay vốn học tập.
+Thời gian đào tạo: 4 năm.
+---
+Để biết thêm thông tin tuyển sinh, liên hệ ngay:
+Điện thoại: (028)6270 6275
+Hotline: 096 205 1080
+Website:http://ts.huit.edu.vn

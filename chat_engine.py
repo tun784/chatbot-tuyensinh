@@ -16,6 +16,7 @@ def search_best_chunk(query, vectorizer, vectors, chunks):
     query_vec = vectorizer.transform([query])
     sim = cosine_similarity(query_vec, vectors)
     idx = sim.argmax()
-    if sim[0, idx] < 0.2:
+    print(">>> Độ tương đồng:", sim[0, idx])
+    if sim[0, idx] < 0.05:
         return None
     return chunks[idx]
