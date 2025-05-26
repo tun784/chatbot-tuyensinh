@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify, send_from_directory
-import openai
+from openai import OpenAI
 from chat_engine import load_chunks, build_vectorizer, search_best_chunk
 import os
 
 app = Flask(__name__)
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 chunks = load_chunks("data.txt")
 vectorizer, vectors = build_vectorizer(chunks)
@@ -21,13 +21,13 @@ def chat():
         {"role": "user", "content": question}
     ]
 
-    response = openai.ChatCompletion.create(
+    chat_response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=messages,
         temperature=0.3,
         max_tokens=300
     )
-    answer = response.choices[0].message["content"]
+    answer = chat_response.choices[0].message.content
     return jsonify({"answer": answer})
 
 # 👇 PHẦN GIAO DIỆN WEB TẠI ĐÂY
