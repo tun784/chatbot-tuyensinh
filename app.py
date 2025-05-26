@@ -1,10 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import openai
 from chat_engine import load_chunks, build_vectorizer, search_best_chunk
 import os
 
 app = Flask(__name__)
-openai.api_key = os.getenv("OPENAI_API_KEY")  # <-- Bạn gán key tại đây
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 chunks = load_chunks("data.txt")
 vectorizer, vectors = build_vectorizer(chunks)
@@ -29,3 +29,12 @@ def chat():
     )
     answer = response.choices[0].message["content"]
     return jsonify({"answer": answer})
+
+# 👇 PHẦN GIAO DIỆN WEB TẠI ĐÂY
+@app.route("/")
+def serve_ui():
+    return send_from_directory(".", "index.html")
+
+@app.route("/style.css")
+def serve_css():
+    return send_from_directory(".", "style.css")
