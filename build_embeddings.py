@@ -1,18 +1,21 @@
-import google.generativeai as genai
+import google.generativeai as genai # Thay thế từ openai
 import os
 import json
 from split_data import read_all_txt_files
 from tqdm import tqdm
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY")) # Thêm dòng này
+# Configure Google Generative AI
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY")) # Đảm bảo biến môi trường này được đặt
 
 def build_embedding(text):
-    # Sử dụng embedding model của Google
-    result = genai.embed_content(model="models/text-embedding-004",
-                                 content=text,
-                                 task_type="retrieval_document")
-    return result['embedding']
-
+    # Sử dụng model embedding của Google GenAI
+    # Đảm bảo model "models/text-embedding-004" có trong list.py của bạn
+    resp = genai.embed_content(
+        model="models/text-embedding-004", # Model embedding của Google
+        content=text,
+        task_type="retrieval_document" # Task type cho tài liệu
+    )
+    return resp['embedding'] # Lấy trực tiếp phần embedding
 
 if __name__ == "__main__":
     chunks = read_all_txt_files("data")
