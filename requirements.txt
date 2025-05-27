@@ -1,12 +1,10 @@
- flask
- openai>=1.0.0
- scikit-learn
- numpy
--tqdm
--gunicorn
-+ tqdm>=4.65.0
-+ gunicorn
-re
-requests
+flask
+openai>=1.0.0
+scikit-learn
+numpy
+tqdm>=4.65.0
+gunicorn
 beautifulsoup4
 json
+re
+requests
