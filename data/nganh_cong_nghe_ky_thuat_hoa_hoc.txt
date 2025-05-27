@@ -2,7 +2,6 @@ URL: https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-hoa-hoc
 Mã ngành: 7510401
 
 Ngành Công nghệ kỹ thuật Hóa học
-Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
 1. MỤC TIÊU ĐÀO TẠO
 Đào tạo kỹ sư ngành công nghệ kỹ thuật Hoá học có phẩm chất chính trị, đạo đức; có kiến thức lý thuyết vững chắc, có kỹ năng thực hành thuần thục, có năng lực nghiên cứu và ứng dụng khoa học công nghệ; có khả năng làm việc độc lập, sáng tạo và giải quyết những vấn đề liên quan ngành công nghệ kỹ thuật hoá học ; sức khỏe tốt; yêu nghề và có trách nhiệm nghề nghiệp; thích nghi với môi trường làm việc, sau khi ra trường, kỹ sư ngành Công nghệ kỹ thuật Hóa học có khả năng:
 Tính toán, thiết kế, chế tạo, vận hành, sửa chữa và bảo trì các thiết bị công nghệ hoá học.
