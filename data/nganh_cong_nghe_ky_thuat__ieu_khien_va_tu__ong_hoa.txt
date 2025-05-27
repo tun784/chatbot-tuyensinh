@@ -4,17 +4,17 @@ Mã ngành: 7510303
 Ngành Công nghệ kỹ thuật điều khiển và tự động hóa
 Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
 1. MỤC TIÊU ĐÀO TẠO
-🔶Mục tiêu của chương trình Công nghệ kỹ thuật điều khiển và Tự động hóa là chuẩn bị cho sinh viên để sau khi ra trường có thể làm việc hiệu quả như một kỹ sư trong các công ty trong công nghiệp, thương mại, dịch vụ, các tổ chức chính phủ và phi chính phủ; có khả năng tiếp tục học tập hoặc nghiên cứu nâng cao trình độ trong lĩnh vực tự động hóa. Chương trình nhằm đào tạo ra kỹ sư Kỹ thuật Điều khiển và Tự động hóa:
-🔶Có phẩm chất chính trị và đạo đức, có ý thức phục vụ nhân dân, có sức khoẻ, đáp ứng yêu cầu xây dựng và bảo vệ Tổ quốc
-🔶Có kiến thức tổng hợp về khoa học cơ bản, cơ khí, điện-điện tử, điều khiển tự động và hệ thống tích hợp;
-🔶Có kỹ năng giải quyết các vấn đề thuộc các lĩnh vực tự động hóa;
-🔶Có khả năng nghiên cứu, thiết kế, chế tạo, cài đặt các hệ thống tích hợp cơ khí, điện - điện tử và điều khiển tự động;
+Mục tiêu của chương trình Công nghệ kỹ thuật điều khiển và Tự động hóa là chuẩn bị cho sinh viên để sau khi ra trường có thể làm việc hiệu quả như một kỹ sư trong các công ty trong công nghiệp, thương mại, dịch vụ, các tổ chức chính phủ và phi chính phủ; có khả năng tiếp tục học tập hoặc nghiên cứu nâng cao trình độ trong lĩnh vực tự động hóa. Chương trình nhằm đào tạo ra kỹ sư Kỹ thuật Điều khiển và Tự động hóa:
+Có phẩm chất chính trị và đạo đức, có ý thức phục vụ nhân dân, có sức khoẻ, đáp ứng yêu cầu xây dựng và bảo vệ Tổ quốc
+Có kiến thức tổng hợp về khoa học cơ bản, cơ khí, điện-điện tử, điều khiển tự động và hệ thống tích hợp;
+Có kỹ năng giải quyết các vấn đề thuộc các lĩnh vực tự động hóa;
+Có khả năng nghiên cứu, thiết kế, chế tạo, cài đặt các hệ thống tích hợp cơ khí, điện - điện tử và điều khiển tự động;
 2. CƠ HỘI NGHỀ NGHIỆP
-🔰Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-🔶Kỹ sư thiết kế, vận hành, bảo trì kỹ thuật ở các dây chuyển sản xuất hiện đại trong công nghiệp như dây chuyền lắp ráp ô tô, tự động hóa phục vụ hàng không, nhà máy điện, các nhà máy chế biến thực phẩm, dây chuyền sản xuất vật liệu xây dựng, dây chuyền sản xuất giấy…
-🔶Chuyên viên tư vấn, thiết kế, phân tích mô phỏng hoặc cán bộ quản lý kỹ thuật tại các nhà máy, tập đoàn, công ty thương mại dịch vụ kỹ thuật điều khiển và tự động hóa.
-🔶Cán bộ giảng dạy trong các trường đại học, cao đẳng, trung cấp về đào tạo chuyên ngành điều khiển và tự động hóa
-🔶Học tiếp lên trình độ sau đại học tại các trường nghiên cứu trong và ngoài nước.
+Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+Kỹ sư thiết kế, vận hành, bảo trì kỹ thuật ở các dây chuyển sản xuất hiện đại trong công nghiệp như dây chuyền lắp ráp ô tô, tự động hóa phục vụ hàng không, nhà máy điện, các nhà máy chế biến thực phẩm, dây chuyền sản xuất vật liệu xây dựng, dây chuyền sản xuất giấy…
+Chuyên viên tư vấn, thiết kế, phân tích mô phỏng hoặc cán bộ quản lý kỹ thuật tại các nhà máy, tập đoàn, công ty thương mại dịch vụ kỹ thuật điều khiển và tự động hóa.
+Cán bộ giảng dạy trong các trường đại học, cao đẳng, trung cấp về đào tạo chuyên ngành điều khiển và tự động hóa
+Học tiếp lên trình độ sau đại học tại các trường nghiên cứu trong và ngoài nước.
 3. ĐIỀU KIỆN TUYỂN SINH
 🔰Phương thức tuyển sinh:
 🔰
@@ -34,37 +34,37 @@ A00 – Toán học, Vật lí, Hóa học
 A01 – Toán học, Vật lý, Tiếng Anh
 C01 – Ngữ văn, Toán học, Vật lý
 D01– Toán học, Ngữ văn, Tiếng Anh
-🔰Phương thức tuyển sinh:
+Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
+Tổ hợp xét tuyển:
 A00 – Toán học, Vật lí, Hóa học
 A01 – Toán học, Vật lý, Tiếng Anh
 C01 – Ngữ văn, Toán học, Vật lý
 D01– Toán học, Ngữ văn, Tiếng Anh
 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-🔰Các môn học chuyên ngành tiêu biểu
-🔶Điện tử cơ bản
-🔶Thực hành điện tử công suất
-🔶Tự động hóa quá trình công nghệ
-🔶Thực hành điều khiển tự động
-🔶Thực hành điều khiền dây chuyền công nghiệp
-🔶Vi điều khiển
-🔶Kỹ thuật đo lường và cảm biến
-🔶Kỹ thuật ROBOT
-🔶Đo lường và giao tiếp máy tính
-🔶Điện tử công suất
-🔰Những tố chất phù hợp với ngành
+Các môn học chuyên ngành tiêu biểu
+Điện tử cơ bản
+Thực hành điện tử công suất
+Tự động hóa quá trình công nghệ
+Thực hành điều khiển tự động
+Thực hành điều khiền dây chuyền công nghiệp
+Vi điều khiển
+Kỹ thuật đo lường và cảm biến
+Kỹ thuật ROBOT
+Đo lường và giao tiếp máy tính
+Điện tử công suất
+Những tố chất phù hợp với ngành
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-🔶Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
-🔶Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
-🔶Được tham gia sinh hoạt học thuật tại Câu lạc bộ PLC HUIT do Khoa quản lý;
-🔶Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
-🔶Được hỗ trợ vay vốn học tập.
-🔶Thời gian đào tạo: 3,5 năm.
+Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
+Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
+Được tham gia sinh hoạt học thuật tại Câu lạc bộ PLC HUIT do Khoa quản lý;
+Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
+Được hỗ trợ vay vốn học tập.
+Thời gian đào tạo: 3,5 năm.
 ---
 Để biết thêm thông tin tuyển sinh, liên hệ ngay:
 Điện thoại: (028) 6270 6275

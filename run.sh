@@ -1,5 +1,5 @@
 #!/bin/bash
 export FLASK_APP=app.py
 export FLASK_ENV=development
-# export OPENAI_API_KEY=your_key_here  # Gán ở đây nếu muốn
+export GOOGLE_API_KEY=AIzaSyDl65_4Px2JI0onfSZzp7k74LUfqNCbDWc
 flask run --host=0.0.0.0 --port=5000

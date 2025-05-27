@@ -4,15 +4,15 @@ Fintech (Financial Technology – Công nghệ Tài chính) là ngành học hi�
 NGÀNHCÔNG NGHỆ TÀI CHÍNH (FINTECH)
 MÃ NGÀNH:7340205
 1. MỤC TIÊU ĐÀO TẠO
-🔶Đào tạo cử nhânCông nghệ Tài chínhcó kiến thức, kỹ năng, mức độ tự chủ và trách nhiệm để làm việc trong lĩnh vực công nghệ tài chính, tiền tệ và ngân hàng; biết vận dụng các kiến thức đã học để phát triển sản phẩm công nghệ dịch vụ tài chính, quản lý, vận hành hoạt động kinh doanh và đầu tư trong lĩnh vực tài chính, ngân hàng nhằm đạt được chất lượng và hiệu quả cao trong điều kiện phát triển kinh tế bền vững của đất nước và hội nhập quốc tế..
-🔶Sinh viên có đủ kiến thức chung về chính trị pháp luật, tự nhiên - xã hội, công nghệ thông tin và ngoại ngữ, khoa học máy tính và khoa học dữ liệu; kiến thức sâu rộng và vững chắc về kinh tế, kinh doanh, tài chính, ngân hàng và đầu tư trong thời đại kỷ nguyên số để tạo nền tảng cho việc học tập và ứng dụng công nghệ chuyên sâu trong lĩnh vực tài chính, ngân hàng.
-🔶Sinh viênáp dụng kiến thức về khoa học và công nghệ thông tin; có kỹ năng phân tích và lập trình cơ bản, mô phỏng trong phân tích và khai thác dữ liệu; có kỹ năng áp dụng các kỹ thuật công nghệ tài chính trong đổi mới quy trình quản lý tài chính, đặc biệt là trong lĩnh vực hệ thống thanh toán, quyết định đầu tư và phát triển sản phẩm tài chính, phân tích dữ liệu lớn tài chính, ngân hàng số, an ninh mạng.
-🔶Bên cạnh đó, sinh viên còn được tăng cường đào tạo ngoại ngữ, tin học, cókhả năng làm việc nhóm, khả năng tự học và nghiên cứu để phát triển nghề nghiệp bản thân trong bối cảnh toàn cầu và thay đổi công nghệ. Tự chịu trách nhiệm trong công việc tài chính, ngân hàng trong môi trường hội nhập và phát triển công nghệ.
+Đào tạo cử nhânCông nghệ Tài chínhcó kiến thức, kỹ năng, mức độ tự chủ và trách nhiệm để làm việc trong lĩnh vực công nghệ tài chính, tiền tệ và ngân hàng; biết vận dụng các kiến thức đã học để phát triển sản phẩm công nghệ dịch vụ tài chính, quản lý, vận hành hoạt động kinh doanh và đầu tư trong lĩnh vực tài chính, ngân hàng nhằm đạt được chất lượng và hiệu quả cao trong điều kiện phát triển kinh tế bền vững của đất nước và hội nhập quốc tế..
+Sinh viên có đủ kiến thức chung về chính trị pháp luật, tự nhiên - xã hội, công nghệ thông tin và ngoại ngữ, khoa học máy tính và khoa học dữ liệu; kiến thức sâu rộng và vững chắc về kinh tế, kinh doanh, tài chính, ngân hàng và đầu tư trong thời đại kỷ nguyên số để tạo nền tảng cho việc học tập và ứng dụng công nghệ chuyên sâu trong lĩnh vực tài chính, ngân hàng.
+Sinh viênáp dụng kiến thức về khoa học và công nghệ thông tin; có kỹ năng phân tích và lập trình cơ bản, mô phỏng trong phân tích và khai thác dữ liệu; có kỹ năng áp dụng các kỹ thuật công nghệ tài chính trong đổi mới quy trình quản lý tài chính, đặc biệt là trong lĩnh vực hệ thống thanh toán, quyết định đầu tư và phát triển sản phẩm tài chính, phân tích dữ liệu lớn tài chính, ngân hàng số, an ninh mạng.
+Bên cạnh đó, sinh viên còn được tăng cường đào tạo ngoại ngữ, tin học, cókhả năng làm việc nhóm, khả năng tự học và nghiên cứu để phát triển nghề nghiệp bản thân trong bối cảnh toàn cầu và thay đổi công nghệ. Tự chịu trách nhiệm trong công việc tài chính, ngân hàng trong môi trường hội nhập và phát triển công nghệ.
 2. CƠ HỘI NGHỀ NGHIỆP
-🔰Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-🔶Chuyên viên phụ trách tài chính,công nghệ,kinh doanh tiền tệ, phân tích tài chính doanh nghiệp tại các ngân hàng, tổ chức tín dụng, công ty chứng khoán, công ty bảo hiểm, tập đoàn tài chính như: ACB,OCB, Agribank, Vietcombank,Sacombank, Vietinbank, ANZ, KPMG, Bảo Việt, Dai-ichilife, ACE Group,…
-🔶Tổ chức, điều hành công tác tài chính,tư vấn về lĩnh vực tài chính, ngân hàng cho các doanh nghiệp trong và ngoài nước.
-🔶Tham gia giảng dạy tại các trường TC, CĐ có đào tạo chuyên ngành tài chính.
+Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+Chuyên viên phụ trách tài chính,công nghệ,kinh doanh tiền tệ, phân tích tài chính doanh nghiệp tại các ngân hàng, tổ chức tín dụng, công ty chứng khoán, công ty bảo hiểm, tập đoàn tài chính như: ACB,OCB, Agribank, Vietcombank,Sacombank, Vietinbank, ANZ, KPMG, Bảo Việt, Dai-ichilife, ACE Group,…
+Tổ chức, điều hành công tác tài chính,tư vấn về lĩnh vực tài chính, ngân hàng cho các doanh nghiệp trong và ngoài nước.
+Tham gia giảng dạy tại các trường TC, CĐ có đào tạo chuyên ngành tài chính.
 3. ĐIỀU KIỆN TUYỂN SINH
 🔰Phương thức tuyển sinh:
 🔰
@@ -32,43 +32,43 @@ A00 – Toán học, Vật lí, Hóa học
 A01 – Toán học, Vật lý, Tiếng Anh
 C01 – Ngữ văn, Toán học, Vật lý
 D01– Toán học, Ngữ văn, Tiếng Anh
-🔰Phương thức tuyển sinh:
+Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
+Tổ hợp xét tuyển:
 A00 – Toán học, Vật lí, Hóa học
 A01 – Toán học, Vật lý, Tiếng Anh
 C01 – Ngữ văn, Toán học, Vật lý
 D01– Toán học, Ngữ văn, Tiếng Anh
 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-🔰Các môn học chuyên ngành tiêu biểu
-🔶Quản trị dự án Blockchain, Fintech
-🔶Chuyển đổi số
-🔶Ngân hàng thương mại
-🔶Thương mại điện tử
-🔶Tài chính quốc tế
-🔶Khai thác dữ liệu và học máy
-🔶Lý thuyết tài chính tiền tệ
-🔶Tài chính doanh nghiệp
-🔶Thực hành đầu tư chứng khoán
-🔶Phân tích tài chính doanh nghiệp
-🔶Ngân hàng số
-🔶Chiến lược đầu tư
-🔰Những tố chất phù hợp với ngành
-🔸Có khả năng tính toán, tư duy logic..
-🔸Cẩn trọng, cẩn thận, năng động, tự tin, quyết đoán
-🔸Chịu áp lực tốt, thích môi trường cạnh tranh
-🔸Có năng khiếu về ngoại ngữ, tin học.
+Các môn học chuyên ngành tiêu biểu
+Quản trị dự án Blockchain, Fintech
+Chuyển đổi số
+Ngân hàng thương mại
+Thương mại điện tử
+Tài chính quốc tế
+Khai thác dữ liệu và học máy
+Lý thuyết tài chính tiền tệ
+Tài chính doanh nghiệp
+Thực hành đầu tư chứng khoán
+Phân tích tài chính doanh nghiệp
+Ngân hàng số
+Chiến lược đầu tư
+Những tố chất phù hợp với ngành
+Có khả năng tính toán, tư duy logic..
+Cẩn trọng, cẩn thận, năng động, tự tin, quyết đoán
+Chịu áp lực tốt, thích môi trường cạnh tranh
+Có năng khiếu về ngoại ngữ, tin học.
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-🔶Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
-🔶Được hỗ trợ giới thiệu việc làm trong thời gian học và sau khi tốt nghiệp.
-🔶Được tham gia các lớp kỹ năng mềm; Các lớp đổi mới sáng tạo và khởi nghiệp của trường tổ chức.
-🔶Được hưởng mọi chế độ theo quy chế của trường ĐH Công lập.
-🔶Hỗ trợ vay vốn học tập.
-🔶Thời gian đào tạo: 3,5 năm.
+Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
+Được hỗ trợ giới thiệu việc làm trong thời gian học và sau khi tốt nghiệp.
+Được tham gia các lớp kỹ năng mềm; Các lớp đổi mới sáng tạo và khởi nghiệp của trường tổ chức.
+Được hưởng mọi chế độ theo quy chế của trường ĐH Công lập.
+Hỗ trợ vay vốn học tập.
+Thời gian đào tạo: 3,5 năm.
 Để biết thêm thông tin tuyển sinh, liên hệ ngay:
 Điện thoại: (028) 6270 6275
 Hotline: 096 205 1080

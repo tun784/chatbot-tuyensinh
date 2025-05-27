@@ -4,17 +4,17 @@ Mã ngành: 7420201
 Ngành Công nghệ sinh học
 Ngành Công nghệ Sinh học là lĩnh vực công nghệ cao mang tính liên ngành, kết hợp sâu rộng giữa sinh học, hóa học, vật lý và kỹ thuật để nghiên cứu, cải tiến và ứng dụng các sinh vật sống cũng như quá trình sinh học vào sản xuất và đời sống. Với nền tảng khoa học vững chắc, ngành học này cho phép khai thác tiềm năng của vi sinh vật, tế bào, enzym và các vật liệu sinh học nhằm tạo ra các sản phẩm có giá trị phục vụ con người.
 1. MỤC TIÊU ĐÀO TẠO
-🔸Đào tạo ngành Công nghệ sinh học bậc đại học của HUIT được triển khai theo định hướng ứng dụng.
-🔸Sinh viên được học những kiến thức cơ bản của sinh học và các ngành khoa học, công nghệ, tiếp nối là khối kiến thức của ngành Công nghệ sinh học và các hướng chuyên ngành ứng dụng. Các môn học ngành và chuyên ngành luôn chú trọng đến khả năng áp dụng CNSH vào thực tiễn sản xuất công nghiệp sinh học và các lĩnh vực liên quan như thực phẩm, nông nghiệp, môi trường.
-🔸Sinh viên được trang bị nhiều kỹ năng liên quan đến hoạt động chuyên môn, trong đó quan trọng nổi bật là kỹ năng vận dụng lý thuyết vào giải quyết vấn đề thực tế (kỹ năng phòng thí nghiệm, kỹ năng giải quyết vấn đề, kỹ năng xử lý số liệu,…). Bên cạnh đó, sinh viên có cơ hội rèn luyện nhiều kỹ năng cần thiết khác như kỹ năng làm việc nhóm, thuyết trình, kỹ năng giao tiếp, kỹ năng sử dụng tin học, ngoại ngữ thông qua các môn học, các hoạt động phong trào, nghiên cứu khoa học, các câu lạc bộ học thuật.
+Đào tạo ngành Công nghệ sinh học bậc đại học của HUIT được triển khai theo định hướng ứng dụng.
+Sinh viên được học những kiến thức cơ bản của sinh học và các ngành khoa học, công nghệ, tiếp nối là khối kiến thức của ngành Công nghệ sinh học và các hướng chuyên ngành ứng dụng. Các môn học ngành và chuyên ngành luôn chú trọng đến khả năng áp dụng CNSH vào thực tiễn sản xuất công nghiệp sinh học và các lĩnh vực liên quan như thực phẩm, nông nghiệp, môi trường.
+Sinh viên được trang bị nhiều kỹ năng liên quan đến hoạt động chuyên môn, trong đó quan trọng nổi bật là kỹ năng vận dụng lý thuyết vào giải quyết vấn đề thực tế (kỹ năng phòng thí nghiệm, kỹ năng giải quyết vấn đề, kỹ năng xử lý số liệu,…). Bên cạnh đó, sinh viên có cơ hội rèn luyện nhiều kỹ năng cần thiết khác như kỹ năng làm việc nhóm, thuyết trình, kỹ năng giao tiếp, kỹ năng sử dụng tin học, ngoại ngữ thông qua các môn học, các hoạt động phong trào, nghiên cứu khoa học, các câu lạc bộ học thuật.
 2. CƠ HỘI NGHỀ NGHIỆP
-🔰Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-🔸Làm chuyên viên, nhân viên nghiên cứu và phát triển (R&D), phụ trách kỹ thuật, quản lý chất lượng, kiểm nghiệm, giám sát, quản lý sản xuất tại các công ty, doanh nghiệp trong các lĩnh vực Công nghệ sinh học, Nông, Lâm, Thủy sản, Y - Dược, Chế biến Thực phẩm, Môi trường;
-🔸Làm chuyên viên ở các tổ chức, cơ quan Bộ, Ngành, địa phương cần chuyên môn liên quan đến Công nghệ Sinh học;
-🔸Thực hiện công việc nghiên cứu khoa học, ứng dụng, triển khai công nghệ liên quan đến Công nghệ Sinh học ở các Viện nghiên cứu, các Trung tâm, các đơn vị nghiên cứu triển khai của các Bộ, Ngành, địa phương, các trường Đại học và Cao đẳng;
-🔸Tham gia giảng dạy công nghệ sinh học và Sinh học ứng dụng ở các trường Đại học, Cao đẳng, Trung học Chuyên nghiệp;
-🔸Quản lý, điều hành trang trại, doanh nghiệp sản xuất, kinh doanh các sản phẩm CNSH;
-🔸Kinh doanh, tư vấn kỹ thuật tại các đơn vị thương mại, dịch vụ trong lĩnh vực nông, lâm, ngư, y dược.
+Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+Làm chuyên viên, nhân viên nghiên cứu và phát triển (R&D), phụ trách kỹ thuật, quản lý chất lượng, kiểm nghiệm, giám sát, quản lý sản xuất tại các công ty, doanh nghiệp trong các lĩnh vực Công nghệ sinh học, Nông, Lâm, Thủy sản, Y - Dược, Chế biến Thực phẩm, Môi trường;
+Làm chuyên viên ở các tổ chức, cơ quan Bộ, Ngành, địa phương cần chuyên môn liên quan đến Công nghệ Sinh học;
+Thực hiện công việc nghiên cứu khoa học, ứng dụng, triển khai công nghệ liên quan đến Công nghệ Sinh học ở các Viện nghiên cứu, các Trung tâm, các đơn vị nghiên cứu triển khai của các Bộ, Ngành, địa phương, các trường Đại học và Cao đẳng;
+Tham gia giảng dạy công nghệ sinh học và Sinh học ứng dụng ở các trường Đại học, Cao đẳng, Trung học Chuyên nghiệp;
+Quản lý, điều hành trang trại, doanh nghiệp sản xuất, kinh doanh các sản phẩm CNSH;
+Kinh doanh, tư vấn kỹ thuật tại các đơn vị thương mại, dịch vụ trong lĩnh vực nông, lâm, ngư, y dược.
 3. ĐIỀU KIỆN TUYỂN SINH
 🔰Phương thức tuyển sinh:
 Phương thức tuyển sinh:
@@ -32,23 +32,23 @@ B00 – Toán học, Hoá học, Sinh học
 B08 – Toán học, Sinh học, Tiếng Anh
 D07– Toán học, Hoá học, Tiếng Anh
 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-🔰Các môn học chuyên ngành tiêu biểu
-🔸Ứng dụng Công nghệ sinh học trong sản xuất thực phẩm chức năng
-🔸Ứng dụng sinh học phân tử trong chẩn đoán
+Các môn học chuyên ngành tiêu biểu
+Ứng dụng Công nghệ sinh học trong sản xuất thực phẩm chức năng
+Ứng dụng sinh học phân tử trong chẩn đoán
 bệnh cây trồng
-🔸Nhiên liệu sinh học
-🔸Ứng dụng sinh học phân tử trong chẩn đoán
-🔸Kỹ thuật trồng và chế biến nấm
-🔸Công nghệ sinh học thực vật
-🔸Công nghệ sinh học thủy sản
-🔸Ứng dụng Công nghệ sinh học trong nông nghiệp hữu cơ
-🔰Những tố chất phù hợp với ngành
+Nhiên liệu sinh học
+Ứng dụng sinh học phân tử trong chẩn đoán
+Kỹ thuật trồng và chế biến nấm
+Công nghệ sinh học thực vật
+Công nghệ sinh học thủy sản
+Ứng dụng Công nghệ sinh học trong nông nghiệp hữu cơ
+Những tố chất phù hợp với ngành
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-🔸Được đào tạo kiến thức chuyên ngành và kỹ năng nghề nghiệp phù hợp với yêu cầu của các tổ chức, doanh nghiệp hoạt động trong lĩnh vực công nghiệp sinh học và liên quan như thực phẩm, nông nghiệp, môi trường, y dược;
-🔸Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
-🔸Được tham gia sinh hoạt tại các Câu lạc bộ học thuật và Anh văn chuyên ngành CNSH;
-🔸Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
-🔸Được hỗ trợ vay vốn học tập.
+Được đào tạo kiến thức chuyên ngành và kỹ năng nghề nghiệp phù hợp với yêu cầu của các tổ chức, doanh nghiệp hoạt động trong lĩnh vực công nghiệp sinh học và liên quan như thực phẩm, nông nghiệp, môi trường, y dược;
+Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
+Được tham gia sinh hoạt tại các Câu lạc bộ học thuật và Anh văn chuyên ngành CNSH;
+Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
+Được hỗ trợ vay vốn học tập.
 ---
 Để biết thêm thông tin tuyển sinh, liên hệ ngay:
 Điện thoại: (028) 6270 6275

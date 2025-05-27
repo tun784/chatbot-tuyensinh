@@ -3,11 +3,27 @@ import unicodedata
 from bs4 import BeautifulSoup
 import re
 import os
-import json
+import string
 headers = {
     "User-Agent": "Mozilla/5.0"
 }
-
+def remove_emojis(text):
+    emoji_pattern = re.compile(
+        "["
+        "\U0001F600-\U0001F64F"  # Mặt cười, cảm xúc
+        "\U0001F300-\U0001F5FF"  # Biểu tượng khác (mây, thời tiết, v.v.)
+        "\U0001F680-\U0001F6FF"  # Phương tiện giao thông, biểu tượng bản đồ
+        "\U0001F700-\U0001F77F"  # Biểu tượng alchemical
+        "\U0001F780-\U0001F7FF"  # Biểu tượng hình học mở rộng
+        "\U0001F800-\U0001F8FF"  # Biểu tượng mũi tên
+        "\U0001F900-\U0001F9FF"  # Biểu tượng bổ sung
+        "\U0001FA00-\U0001FA6F"  # Biểu tượng bổ sung khác
+        "\U0001FA70-\U0001FAFF"
+        "\U00002700-\U000027BF"  # Dấu đặc biệt (bao gồm 🔰)
+        "\U000024C2-\U0001F251"
+        "]+", flags=re.UNICODE
+    )
+    return emoji_pattern.sub(r'', text)
 # Hàm loại bỏ phần footer không cần thiết
 def clean_html_footer(html):
     # Cắt bỏ đoạn cuối nếu có cụm này
@@ -66,7 +82,7 @@ def crawl_page(url):
                 inner_spans = next_p.find_all('span')
                 for span in inner_spans:
                     if not span.find('span'):
-                        text = span.get_text(strip=True)
+                        text = remove_emojis(span.get_text(strip=True))
                         if text:
                             deepest_spans.append(text)
             break
@@ -102,12 +118,12 @@ def crawl_page(url):
                                 if span_text:
                                     extra_content.append(span_text)
                         else:
-                            p_text = p_tag.get_text(strip=True)
+                            p_text = remove_emojis(p_tag.get_text(strip=True))
                             if p_text:
                                 extra_content.append(p_text)
 
     for line in main_content:
-        output_lines.append(line)
+        output_lines.append(remove_emojis(line))
         if "3. ĐIỀU KIỆN TUYỂN SINH" in line.upper() and extra_content:
             output_lines.extend(extra_content)
 
@@ -151,7 +167,6 @@ if __name__ == "__main__":
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-thong-tin",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-co-dien-tu",
         "https://ts.huit.edu.vn/nganh-dh/nganh-dam-bao-chat-luong-va-an-toan-thuc-pham",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-dien-dien-tu",
         "https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-sinh-hoc",
         "https://ts.huit.edu.vn/nganh-dh/nganh-ngon-ngu-anh",
