@@ -14,8 +14,8 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def search_best_chunk_with_embedding(query):
     q_emb_result = genai.embed_content(model="models/text-embedding-004",
-                                       content=query,
-                                       task_type="retrieval_query")
+    content=query,
+    task_type="retrieval_query")
     q_emb = np.array(q_emb_result['embedding']).reshape(1, -1)
 
     sims = cosine_similarity(q_emb, matrix)[0]
