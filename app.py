@@ -29,7 +29,7 @@ def chat():
     # 2. Gửi vào Google Generative AI
     try:
         model = genai.GenerativeModel('gemini-1.5-flash-latest')
-        prompt = f"Bạn là trợ lý tuyển sinh. hãy trả lời dựa trên thông tin sau:\n\n{context}\n\nCâu hỏi: {question}"
+        prompt = f"Bạn là trợ lý tuyển sinh. Hãy trả lời ngắn gọn CHỈ dựa trên thông tin sau:\n\n{context}\n\nCâu hỏi: {question}"
         # Sử dụng generate_content cho Google Generative AI
         chat_resp = model.generate_content(prompt)
         answer = chat_resp.text
