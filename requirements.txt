@@ -1,5 +1,11 @@
 flask
 openai>=1.0.0
 scikit-learn
-gunicorn
 numpy
+tqdm
+gunicorn
+os
+re
+requests
+beautifulsoup4
+json

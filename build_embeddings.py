@@ -1,25 +1,31 @@
+from openai import OpenAI
 import os
 import json
-import numpy as np
-import openai
-from split_data import split_text_into_chunks
+from split_data import read_all_txt_files
+from tqdm import tqdm
 
-# Thiết lập API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# 1. Chia data.txt thành chunks
-chunks = split_text_into_chunks("data.txt", max_chunk_size=500)
-
-# 2. Gọi OpenAI Embedding để tính vector cho từng chunk
-embeddings = []
-for chunk in chunks:
-    resp = openai.Embedding.create(
-        model="text-embedding-3-small",
-        input=chunk
+def build_embedding(text):
+    resp = client.embeddings.create(
+        input=text,
+        model="text-embedding-3-small"
     )
-    emb = resp["data"][0]["embedding"]
-    embeddings.append(emb)
+    return resp.data[0].embedding
 
-# 3. Lưu chunks + embeddings ra file
-with open("chunks.json", "w", encoding="utf-8") as f:
-    json.dump({"chunks": chunks, "embeddings": embeddings}, f)
+if __name__ == "__main__":
+    chunks = read_all_txt_files("data")
+    output = []
+
+    for chunk in tqdm(chunks, desc="🔍 Đang tạo embedding"):
+        embedding = build_embedding(chunk["text"])
+        output.append({
+            "filename": chunk["filename"],
+            "text": chunk["text"],
+            "embedding": embedding
+        })
+
+    with open("chunks_with_embeddings.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
+    print("✅ Đã lưu chunks_with_embeddings.json")

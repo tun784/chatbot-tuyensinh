@@ -1,22 +1,25 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
+import json
+import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-def load_chunks(filepath="data.txt"):
-    with open(filepath, "r", encoding="utf-8") as f:
-        content = f.read()
-    chunks = content.split("\n\n")  # Tách đoạn
-    return [chunk.strip() for chunk in chunks if len(chunk.strip()) > 50]
+def load_chunks(path="chunks_with_embeddings.json"):
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data
 
-def build_vectorizer(chunks):
-    vectorizer = TfidfVectorizer()
-    vectors = vectorizer.fit_transform(chunks)
-    return vectorizer, vectors
+def build_vector_matrix(chunks):
+    texts = [item["text"] for item in chunks]
+    matrix = np.array([item["embedding"] for item in chunks])
+    return texts, matrix
 
-def search_best_chunk(query, vectorizer, vectors, chunks):
-    query_vec = vectorizer.transform([query])
-    sim = cosine_similarity(query_vec, vectors)
-    idx = sim.argmax()
-    print(">>> Độ tương đồng:", sim[0, idx])
-    if sim[0, idx] < 0.05:
+def search_best_chunk(question, client, chunks, matrix, threshold=0.15):
+    q_emb = client.embeddings.create(
+        input=question,
+        model="text-embedding-3-small"
+    ).data[0].embedding
+
+    sims = cosine_similarity([q_emb], matrix)[0]
+    idx = int(np.argmax(sims))
+    if sims[idx] < threshold:
         return None
     return chunks[idx]
