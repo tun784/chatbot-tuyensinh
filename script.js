@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = await res.json();
       appendMessage("bot", data.answer);
     } catch (err) {
-      appendMessage("bot", "❌ Đã xảy ra lỗi khi gửi câu hỏi.");
+      appendMessage("bot", "Đã xảy ra lỗi khi gửi câu hỏi.");
     }
   }
 

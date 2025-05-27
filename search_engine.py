@@ -23,6 +23,6 @@ def search_best_chunk_with_embedding(query):
     # 2. Tính cosine similarity
     sims = cosine_similarity(q_emb, matrix)[0]
     idx = int(np.argmax(sims))
-    if sims[idx] < 0.05:   # bạn có thể điều chỉnh ngưỡng
+    if sims[idx] < 0.2:   # bạn có thể điều chỉnh ngưỡng
         return None
     return chunks[idx]
