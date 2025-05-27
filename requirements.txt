@@ -5,6 +5,3 @@ numpy
 tqdm>=4.65.0
 gunicorn
 beautifulsoup4
-json
-re
-requests

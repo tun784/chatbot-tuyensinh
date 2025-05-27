@@ -2,10 +2,13 @@ from flask import Flask, request, jsonify, send_from_directory
 from openai import OpenAI
 import os
 from search_engine import search_best_chunk_with_embedding
-
+import random
 app = Flask(__name__)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+DEFAULT_RESPONSES = [
+    "Tôi là trợ lý tư vấn của trường Đại học Công Thương TPHCM và sẵn sàng hỗ trợ bạn về thông tin tuyển sinh và các vấn đề liên quan đến trường. Nếu bạn có câu hỏi nào về trường, ngành học, điểm chuẩn hay thông tin tuyển sinh, hãy cho tôi biết!",
+    "Tôi là trợ lý tư vấn của trường Đại học Công Thương TPHCM và không có thông tin về cá nhân cụ thể nào. Nếu bạn có câu hỏi nào liên quan đến trường, ngành học, điểm chuẩn hay thông tin tuyển sinh, hãy cho tôi biết!"
+]
 @app.route("/chat", methods=["POST"])
 def chat():
     question = request.json.get("question")
@@ -16,7 +19,7 @@ def chat():
     context = search_best_chunk_with_embedding(question)
     print(">>> Context gửi vào GPT:\n", context)
     if not context:
-        return jsonify({"answer": "Xin lỗi, tôi chưa có thông tin phù hợp để trả lời câu hỏi này."})
+        return jsonify({"answer": random.choice(DEFAULT_RESPONSES)})
 
     # 2. Gửi vào ChatGPT
     messages = [
