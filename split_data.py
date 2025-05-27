@@ -1,7 +1,7 @@
 import os
 import re
 
-def split_into_chunks(text, max_words=2000):
+def split_into_chunks(text, max_words=5000):
     words = text.split()
     chunks = []
     for i in range(0, len(words), max_words):
