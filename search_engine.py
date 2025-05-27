@@ -79,7 +79,7 @@ def search_best_chunk_with_embedding(question, threshold=0.7):
     print(f"Câu hỏi: {question}")
     print(f"Độ tương đồng cao nhất tìm được: {sims[idx]:.4f}")
     print(f"Chunk được chọn (index {idx}):")
-    print(chunks[idx])
+    print(chunks_data[idx])
     print(f"-------------------------------------------------------------------------------")
     # ---------------------------------------------
 
