@@ -30,6 +30,6 @@ def search_best_chunk_with_embedding(query):
     print(f"-------------------------")
     # ---------------------------------------------
 
-    if sims[idx] < 0.02:
+    if sims[idx] < 0.04:
         return None
     return chunks[idx]
