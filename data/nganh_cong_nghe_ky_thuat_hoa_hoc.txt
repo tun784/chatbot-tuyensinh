@@ -1,50 +1,78 @@
 URL: https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-hoa-hoc
 Mã ngành: 7510401
 
-Ngành Công nghệ kỹ thuật Hóa học
+NGÀNH CÔNG NGHỆ KỸ THUẬT HÓA HỌC
+ 
+MÃ NGÀNH: 7510401
+Ngành Công nghệ Kỹ thuật Hóa học là một trong những lĩnh vực mũi nhọn, đóng vai trò then chốt trong sự phát triển của nhiều ngành công nghiệp trọng điểm và đời sống xã hội hiện đại. Đây là ngành học kết hợp giữa khoa học, kỹ thuật và công nghệ nhằm nghiên cứu, phát triển, sản xuất và ứng dụng các sản phẩm hóa học phục vụ cả công nghiệp và dân sinh.
+Sinh viên ngành này được đào tạo toàn diện từ kiến thức cơ sở đến chuyên sâu về hóa học ứng dụng, quy trình sản xuất công nghiệp, kỹ thuật phân tích, thiết kế hệ thống công nghệ và kiểm soát chất lượng sản phẩm hóa học. Ngoài ra, chương trình học còn chú trọng rèn luyện kỹ năng tư duy logic, vận hành thiết bị công nghệ, làm việc nhóm, tư duy sáng tạo và khả năng thích ứng trong môi trường kỹ thuật – công nghiệp hiện đại.
 1. MỤC TIÊU ĐÀO TẠO
-Đào tạo kỹ sư ngành công nghệ kỹ thuật Hoá học có phẩm chất chính trị, đạo đức; có kiến thức lý thuyết vững chắc, có kỹ năng thực hành thuần thục, có năng lực nghiên cứu và ứng dụng khoa học công nghệ; có khả năng làm việc độc lập, sáng tạo và giải quyết những vấn đề liên quan ngành công nghệ kỹ thuật hoá học ; sức khỏe tốt; yêu nghề và có trách nhiệm nghề nghiệp; thích nghi với môi trường làm việc, sau khi ra trường, kỹ sư ngành Công nghệ kỹ thuật Hóa học có khả năng:
-Tính toán, thiết kế, chế tạo, vận hành, sửa chữa và bảo trì các thiết bị công nghệ hoá học.
-Hiểu và ứng dụng các vấn đề về công nghệ hóa học vào các lĩnh vực chuyên ngành hẹp như vật liệu polymer & composite; công nghệ trích ly, chiết tách chất; hoá hương liệu mỹ phẩm; kỹ thuật nhuộm in; thuốc kích thích và bảo vệ thực vật; kỹ thuật gốm sứ và vật liệu ceramic; công nghệ điện hoá và chống ăn mòn kim loại; kỹ thuật phân tích hóa học; công nghệ bảo quản sau thu hoạch, kỹ thuật môi trường …
-Quản lý kỹ thuật, quản lý chất lượng tại các cơ sở sản xuất, các nhà máy, công ty hoạt động liên quan đến vấn đề hóa học và công nghệ kỹ thuật hóa học.
-Giao tiếp chuyên môn và xã hội, làm việc nhóm, tự học và nghiên cứu để nâng cao kiến thức (chuyên môn, ngoại ngữ, tin học ...), trao dồi các kỹ năng phục vụ nghề nghiệp.
-Tham gia nghiên cứu, giảng dạy (Trường cao đẳng và đại học, viện nghiên cứu...) và làm việc (ở các công ty, nhà máy, phân xưởng,... liên quan đến công nghệ kỹ thuật hóa học, hóa học, môi trường)
+  Đào tạo kỹ sư ngành công nghệ kỹ thuật Hoá học có phẩm chất chính trị, đạo đức; có kiến thức lý thuyết vững chắc, có kỹ năng thực hành thuần thục, có năng lực nghiên cứu và ứng dụng khoa học công nghệ; có khả năng làm việc độc lập, sáng tạo và giải quyết những vấn đề liên quan ngành công nghệ kỹ thuật hoá học ; sức khỏe tốt; yêu nghề và có trách nhiệm nghề nghiệp; thích nghi với môi trường làm việc, sau khi ra trường, kỹ sư ngành Công nghệ kỹ thuật Hóa học có khả năng:
+ Tính toán, thiết kế, chế tạo, vận hành, sửa chữa và bảo trì các thiết bị công nghệ hoá học.
+ Hiểu và ứng dụng các vấn đề về công nghệ hóa học vào các lĩnh vực chuyên ngành hẹp như vật liệu polymer & composite; công nghệ trích ly, chiết tách chất; hoá hương liệu mỹ phẩm; kỹ thuật nhuộm in; thuốc kích thích và bảo vệ thực vật; kỹ thuật gốm sứ và vật liệu ceramic; công nghệ điện hoá và chống ăn mòn kim loại; kỹ thuật phân tích hóa học; công nghệ bảo quản sau thu hoạch, kỹ thuật môi trường …
+ Quản lý kỹ thuật, quản lý chất lượng tại các cơ sở sản xuất, các nhà máy, công ty hoạt động liên quan đến vấn đề hóa học và công nghệ kỹ thuật hóa học.
+ Giao tiếp chuyên môn và xã hội, làm việc nhóm, tự học và nghiên cứu để nâng cao kiến thức (chuyên môn, ngoại ngữ, tin học ...), trao dồi các kỹ năng phục vụ nghề nghiệp.
+ Tham gia nghiên cứu, giảng dạy (Trường cao đẳng và đại học, viện nghiên cứu...) và làm việc (ở các công ty, nhà máy, phân xưởng,... liên quan đến công nghệ kỹ thuật hóa học, hóa học, môi trường)
+ 
 2. CƠ HỘI NGHỀ NGHIỆP
-Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-Kỹ sư công nghệ, quản lý điều hành tại các nhà máy, cơ sở sản xuất (quản lý sản xuất, giám sát công nghệ, vận hành dây chuyền công nghệ, nghiên cứu cải tiến sản xuất, quản lý nhà máy, quản lý chất lượng sản phẩm, quản trị doanh nghiệp);
-Làm việc trong các phòng thí nghiệm nghiên cứu phát triển sản phẩm hoặc quản lý chất lượng sản phẩm;
-Làm việc tại các đơn vị thiết kế, thi công, lắp đặt, quản lý dự án liên quan đến hóa chất, thực phẩm, dầu khí, mỹ phẩm, môi trường…;
-Làm nghiên cứu viên, giảng viên tại các viện nghiên cứu, các trường đại học và cao đẳng;
-Kinh doanh hóa chất, thiết bị, chuyển giao công nghệ;
-Tiếp tục học cao học, nghiên cứu sinh để trở thành thạc sỹ, tiến sỹ ngành công nghệ kỹ thuật hóa học.
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+ Kỹ sư công nghệ, quản lý điều hành tại các nhà máy, cơ sở sản xuất (quản lý sản xuất, giám sát công nghệ, vận hành dây chuyền công nghệ, nghiên cứu cải tiến sản xuất, quản lý nhà máy, quản lý chất lượng sản phẩm, quản trị doanh nghiệp);
+ Làm việc trong các phòng thí nghiệm nghiên cứu phát triển sản phẩm hoặc quản lý chất lượng sản phẩm;
+ Làm việc tại các đơn vị thiết kế, thi công, lắp đặt, quản lý dự án liên quan đến hóa chất, thực phẩm, dầu khí, mỹ phẩm, môi trường…;
+ Làm nghiên cứu viên, giảng viên tại các viện nghiên cứu, các trường đại học và cao đẳng;
+ Kinh doanh hóa chất, thiết bị, chuyển giao công nghệ;
+ Tiếp tục học cao học, nghiên cứu sinh để trở thành thạc sỹ, tiến sỹ ngành công nghệ kỹ thuật hóa học.
+ 
 3. ĐIỀU KIỆN TUYỂN SINH
-🔰Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-Phương thức tuyển sinh:
+ Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
+ Tổ hợp xét tuyển:
 A00 – Toán học, Vật lí, Hóa học
 B00 – Toán học, Hoá học, Sinh học
 B08 – Toán học, Sinh học, Tiếng Anh
 D07– Toán học, Hoá học, Tiếng Anh
-4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-Các môn học chuyên ngành tiêu biểu
-Những tố chất phù hợp với ngành
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Công nghệ hữu cơ – dầu khí;
+ Công nghệ vô cơ;
+ Kỹ thuật và quá trình thiết bị trong công nghệ hóa học – sinh học và thực phẩm.
+ Hóa mỹ phẩm;
+ Kỹ thuật phân tích và đảm bảo chất lượng
+ Những tố chất phù hợp với ngành 
+ Ý thức tổ chức, kỷ luật, chấp hành pháp luật, sống và làm việc theo Hiến pháp và pháp luật;
+ Khả năng tư duy logic, khả năng tranh luận, phản biện;
+ Khả năng làm việc độc lập và làm việc nhóm;
+ Tính trung thực, khách quan và công bằng trong xử lý công việc;
+ Khả năng giao tiếp, thuyết phục, thương lượng;
+ Năng động, sáng tạo, kiên định mục tiêu.
+ 
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-Được đào tạo kiến thức và kỹ năng nghề nghiệp phù hợp với yêu cầu của các doanh nghiệp ngành Công nghệ kỹ thuật hóa học;
-Được tham quan kiến tập từng học kỳ tại nhà máy, xí nghiệp ngành Công nghệ kỹ thuật hóa học;
-Được hỗ trợ giới thiệu nơi thực tập và việc làm sau khi tốt nghiệp;
-Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập;
-Được hỗ trợ vay vốn học tập;
-Thời gian đào tạo: 4 năm.
----
-Để biết thêm thông tin tuyển sinh, liên hệ ngay:
-Điện thoại: (028) 6270 6275
-Hotline: 096 205 1080
-Website:http://ts.huit.edu.vn
+ Được đào tạo kiến thức và kỹ năng nghề nghiệp phù hợp với yêu cầu của các doanh nghiệp ngành Công nghệ kỹ thuật hóa học;
+ Được tham quan kiến tập từng học kỳ tại nhà máy, xí nghiệp ngành Công nghệ kỹ thuật hóa học;
+ Được hỗ trợ giới thiệu nơi thực tập và việc làm sau khi tốt nghiệp;
+ Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập;
+ Được hỗ trợ vay vốn học tập;
+ Thời gian đào tạo: 4 năm.
+
+Thông tin thêm:
+Định nghĩa và Vai trò: Là lĩnh vực khoa học kỹ thuật và công nghệ chuyên nghiên cứu, phát triển và ứng dụng những kiến thức hóa học và khoa học liên ngành vào quá trình sản xuất để tạo ra các sản phẩm dân dụng, cũng như kiểm tra đánh giá chất lượng các sản phẩm phục vụ công nghiệp và đời sống xã hội. Ngành này đóng vai trò quan trọng và chủ chốt trong quá trình công nghiệp hóa, hiện đại hóa đất nước.
+Khoa: Khoa Công nghệ Hóa học là một trong những khoa trọng điểm của trường.
+Các chuyên ngành đào tạo: Ngành Công nghệ Kỹ thuật Hóa học tại trường được chia thành năm chuyên ngành:
+Hóa Mỹ phẩm
+Công nghệ Hữu cơ
+Quá trình thiết bị và Dầu khí
+Công nghệ Vô cơ
+Kỹ thuật Phân tích và Đảm bảo Chất lượng
+Chương trình đào tạo: Sinh viên được đào tạo về kiến thức, kỹ năng và thái độ để trở thành một cử nhân/kỹ sư hóa học phù hợp với xu hướng phát triển của thời đại. Chương trình của trường là một trong hai ngành được đánh giá chuẩn quốc tế IQA và sắp tới sẽ kiểm định chuẩn quốc tế khác của châu Âu và Mỹ. Định hướng phát triển của khoa là theo tiệm cận với các tiêu chuẩn quốc tế, phù hợp với xu thế hiện đại và phù hợp với xu thế Việt Nam để sinh viên có cơ hội cạnh tranh trên thị trường lao động trong nước và quốc tế.
+Thực hành và Nghiên cứu: Sinh viên được thực hiện trực tiếp các đề tài nghiên cứu ứng dụng và chế tạo sản phẩm như các sản phẩm chăm sóc cá nhân, mỹ phẩm, tinh dầu, thực phẩm chức năng, đồ gốm, vật liệu mới, các sản phẩm có nguồn gốc tự nhiên/dược liệu, và các công nghệ xử lý ô nhiễm, các mô hình thiết bị/dây chuyền công nghệ sản xuất. Sinh viên luôn được thực hành trong phòng thí nghiệm được trang bị đầy đủ các máy thiết bị hiện đại, tiên tiến và an toàn.
+Cơ sở vật chất: Hệ thống giảng đường, trung tâm thí nghiệm thực hành, thư viện, trung tâm thể dục thể thao hiện đại. Phòng thí nghiệm được đầu tư mạnh mẽ.
+Đội ngũ giảng viên: Gồm 5 Phó giáo sư, 20 Tiến sĩ, 22 Thạc sĩ, 4 Giảng viên chính.
+Kết nối doanh nghiệp: Khoa có kết nối với doanh nghiệp thông qua hợp tác (công việc, đào tạo nhân lực, thực tập/kiến tập). Hàng năm gửi khoảng 300 sinh viên đi thực tập dài hạn. Rất nhiều doanh nghiệp nhận sinh viên trực tiếp trong quá trình thực tập. Có học kỳ doanh nghiệp giúp sinh viên rèn luyện kỹ năng, không bỡ ngỡ khi tốt nghiệp.
+Hoạt động sinh viên: Sinh viên được giáo viên hướng dẫn, anh chị khóa trên theo sát và chỉ dạy tận tình. Được làm quen với phòng thí nghiệm rất sớm. Khoa tổ chức các hoạt động như sinh hoạt đầu khóa, học thuật sinh viên, phát triển cá nhân, nghiên cứu khoa học, ý tưởng khởi nghiệp.
+Cơ hội việc làm: Mỗi năm có gần 300 cử nhân/kỹ sư tốt nghiệp. Trên 95% các tân cử nhân/kỹ sư từ chuyên ngành Công nghệ Kỹ thuật Hóa học và Công nghệ Vật liệu của Khoa có việc làm trong vòng 6 tháng sau khi tốt nghiệp. Cơ hội việc làm đa dạng và rộng mở, thu nhập với những con số đáng mơ ước cho lao động trẻ tại Việt Nam. Ngành đóng vai trò chủ chốt trong các lĩnh vực sản xuất công nghiệp (dầu khí, dược phẩm, nhiên liệu, mỹ phẩm, chất tẩy rửa, phân bón, cao su, pin, ắc quy, xi măng, gốm sứ, vật nhuộm, Poly, sản xuất nhựa, sơn giấy) và liên quan trực tiếp đến các lĩnh vực khác (môi trường, thực phẩm, hàng tiêu dùng, điện điện tử, vải sợi).
+Tố chất phù hợp: Cần sự đam mê khám phá, yêu hóa học, thích làm thực nghiệm, khao khát chinh phục những điều mới mẻ. Đồng thời là người cẩn thận, tỉ mỉ và chịu được áp lực.

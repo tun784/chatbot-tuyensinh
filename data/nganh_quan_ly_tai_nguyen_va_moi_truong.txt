@@ -1,52 +1,61 @@
 URL: https://ts.huit.edu.vn/nganh-dh/nganh-quan-ly-tai-nguyen-va-moi-truong
 Mã ngành: 7850101
 
-Ngành quản lý tài nguyên và môi trường
-Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
+NGÀNH QUẢN LÝ TÀI NGUYÊN VÀ MÔI TRƯỜNG
+ 
+MÃ NGÀNH: 7850101
+Ngành Quản lý Tài nguyên và Môi trường đào tạo những người học trở thành chuyên gia trong việc hoạch định chính sách và xây dựng các giải pháp tổng hợp – bao gồm pháp lý, kinh tế, xã hội và kỹ thuật – nhằm bảo vệ tài nguyên thiên nhiên và môi trường một cách hiệu quả và bền vững. Chương trình học không chỉ trang bị nền tảng kiến thức vững chắc về khoa học môi trường, quản lý tài nguyên, đánh giá tác động môi trường, mà còn phát triển tư duy chiến lược, khả năng phản biện và tư duy liên ngành.
+Trong bối cảnh cách mạng công nghiệp 4.0 và xu hướng phát triển xanh, ngành học này đóng vai trò quan trọng trong việc dẫn dắt các giải pháp thông minh, thích ứng với biến đổi khí hậu, suy giảm tài nguyên và ô nhiễm môi trường. Đây là lựa chọn lý tưởng cho những bạn trẻ muốn theo đuổi sứ mệnh vì cộng đồng, vì thiên nhiên và vì một hành tinh phát triển bền vững lâu dài.
 1. MỤC TIÊU ĐÀO TẠO
-Kiến thức đại cương, cơ sở và chuyên ngành về các loại tài nguyên thiên nhiên như; đất, nước, không khí, rừng, khoáng sản, năng lượng, đa dạng sinh học …, quản lý ô nhiễm môi trường, quy hoạch môi trường, luật và chính sách tài nguyên môi trường, đánh giá tác động môi trường, an toàn - sức khỏe - môi trường, công nghệ kiểm soát các loại chất thải;
-Thành thạo kỹ năng cần thiết để giải quyết các các vấn đề liên quan đến quản lý tài nguyên thiên nhiên và quản lý môi trường; kỹ năng truyền đạt, phản biện và đánh giá chất lượng công việc; Năng lực ngoại ngữ và tin học;
-Tự chủ và trách nhiệm khi làm việc độc lập, làm việc nhóm, tự định hướng, lập kế hoạch, giám sát và quản lý công việc quản lý tài nguyên và môi trường.
+ Kiến thức đại cương, cơ sở và chuyên ngành về các loại tài nguyên thiên nhiên như; đất, nước, không khí, rừng, khoáng sản, năng lượng, đa dạng sinh học …, quản lý ô nhiễm môi trường, quy hoạch môi trường, luật và chính sách tài nguyên môi trường, đánh giá tác động môi trường, an toàn - sức khỏe - môi trường, công nghệ kiểm soát các loại chất thải;
+ Thành thạo kỹ năng cần thiết để giải quyết các các vấn đề liên quan đến quản lý tài nguyên thiên nhiên và quản lý môi trường; kỹ năng truyền đạt, phản biện và đánh giá chất lượng công việc; Năng lực ngoại ngữ và tin học;
+ Tự chủ và trách nhiệm khi làm việc độc lập, làm việc nhóm, tự định hướng, lập kế hoạch, giám sát và quản lý công việc quản lý tài nguyên và môi trường.
+ 
 2. CƠ HỘI NGHỀ NGHIỆP
-Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-Các cơ quan quản lý nhà nước về tài nguyên và môi trường từ trung ương đến địa phương như: Bộ TNMT, Sở TNMT các Tỉnh/Thành phố, Công ty môi trường đô thị, Phòng TNMT quận/huyện;
-Ban quản lý các Khu công nghiệp, Khu chế xuất, các bộ phận quản lý môi trường, an toàn lao động tại các cơ quan, doanh nghiệp, nhà máy, xí nghiệp sản xuất trong nước và quốc tế;
-Ban quản lý các dự án trong nước và quốc tế liên quan đến tài nguyên thiên nhiên và môi trường;
-Các tổ chức phi chính phủ, các công ty và trung tâm tư vấn, quan trắc môi trường, các phòng thí nghiệm; Các Viện/Trung tâm nghiên cứu và các trường Đại học chuyên về quản lý tài nguyên và môi trường.
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+   Các cơ quan quản lý nhà nước về tài nguyên và môi trường từ trung ương đến địa phương như: Bộ TNMT, Sở TNMT các Tỉnh/Thành phố, Công ty môi trường đô thị, Phòng TNMT quận/huyện;
+  Ban quản lý các Khu công nghiệp, Khu chế xuất, các bộ phận quản lý môi trường, an toàn lao động tại các cơ quan, doanh nghiệp, nhà máy, xí nghiệp sản xuất trong nước và quốc tế;
+ Ban quản lý các dự án trong nước và quốc tế liên quan đến tài nguyên thiên nhiên và môi trường;
+  Các tổ chức phi chính phủ, các công ty và trung tâm tư vấn, quan trắc môi trường, các phòng thí nghiệm; Các Viện/Trung tâm nghiên cứu và các trường Đại học chuyên về quản lý tài nguyên và môi trường.
+ 
 3. ĐIỀU KIỆN TUYỂN SINH
-🔰Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-Phương thức tuyển sinh:
+ Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
+ Tổ hợp xét tuyển:
 A00 – Toán học, Vật lí, Hóa học
 B00 – Toán học, Hoá học, Sinh học
 B08 – Toán học, Sinh học, Tiếng Anh
 D07– Toán học, Hoá học, Tiếng Anh
-4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-Các môn học chuyên ngành tiêu biểu
-Kiểm soát ô nhiễm nguồn nước
-Ứng dụng GIS trong quản lý tài nguyên và môi trường
-Quản lý tài nguyên khoáng sản và năng lượng/ tài nguyên rừng và đa dạng sinh học
-Sức khỏe, an toàn và môi trường (HSE)
-Kiểm soát ô nhiễm môi trường không khí và tiếng ồn
-Những tố chất phù hợp với ngành
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Quản lý chất lượng môi trường/Quản lý môi trường đô thị và khu công nghiệp
+ Quan trắc và phân tích môi trường
+ Luật và chính sách môi trường
+ Biến đổi khí hậu toàn cầu
+ Mô hình hóa môi trường/ Thực hành mô hình hóa môi trường
+ Quản lý và xử lý chất thải rắn đô thị và chất thải nguy hại
+ Kiểm soát ô nhiễm nguồn nước
+ Ứng dụng GIS trong quản lý tài nguyên và môi trường
+ Quản lý tài nguyên khoáng sản và năng lượng/ tài nguyên rừng và đa dạng sinh học
+ Sức khỏe, an toàn và môi trường (HSE)
+ Kiểm soát ô nhiễm môi trường không khí và tiếng ồn
+ Những tố chất phù hợp với ngành 
+ Ý thức bảo vệ tài nguyên thiên nhiên và môi trường hướng đến phát triển bền vững;
+ Khả năng tư duy logic, khả năng làm việc độc lập và làm việc nhóm;
+ Khả năng giao tiếp, tranh luận, phản biện, thuyết phục, thương lượng;
+ Tính trung thực, khách quan trong xử lý công việc;
+ Năng động, sáng tạo, kiên định mục tiêu.
+ 
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-Được đào tạo kiến thức lý luận và kỹ năng nghề nghiệp phù hợp với yêu cầu của các cơ quan và doanh nghiệp; Được đào tạo kỹ năng mềm hỗ trợ thích ứng tốt trong công việc;
-Được hỗ trợ giới thiệu nơi thực tập và tích lũy kinh nghiệm thực tế trong 6 tháng học kì doanh nghiệp;
-Được tạo cơ hội giao lưu với doanh nghiệp và giới thiệu việc làm khi tốt nghiệp;
-Được tham gia sinh hoạt học thuật tại Câu lạc bộ học thuật môi trường;
-Được hưởng các chế độ ưu đãi và học bổng dành cho người học theo quy chế của Trường Đại học công lập;
-Được hỗ trợ vay vốn học tập;
-Thời gian đào tạo: 4,0 năm.
----
-Để biết thêm thông tin tuyển sinh, liên hệ ngay:
-Điện thoại: (028) 6270 6275
-Hotline: 096 205 1080
-Website:http://ts.huit.edu.vn
+   Được đào tạo kiến thức lý luận và kỹ năng nghề nghiệp phù hợp với yêu cầu của các cơ quan và doanh nghiệp; Được đào tạo kỹ năng mềm hỗ trợ thích ứng tốt trong công việc;
+   Được hỗ trợ giới thiệu nơi thực tập và tích lũy kinh nghiệm thực tế trong 6 tháng học kì doanh nghiệp;
+   Được tạo cơ hội giao lưu với doanh nghiệp và giới thiệu việc làm khi tốt nghiệp;
+   Được tham gia sinh hoạt học thuật tại Câu lạc bộ học thuật môi trường;
+   Được hưởng các chế độ ưu đãi và học bổng dành cho người học theo quy chế của Trường Đại học công lập;
+   Được hỗ trợ vay vốn học tập;
+   Thời gian đào tạo: 4,0 năm.

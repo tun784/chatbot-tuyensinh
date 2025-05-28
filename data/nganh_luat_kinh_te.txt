@@ -1,49 +1,69 @@
 URL: https://ts.huit.edu.vn/nganh-dh/nganh-luat-kinh-te
 Mã ngành: 7380107
 
-Ngành Luật kinh tế
-Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
+NGÀNH LUẬT KINH TẾ
+ 
+MÃ NGÀNH: 7380107
+Luật Kinh tế là một chuyên ngành trọng điểm trong hệ thống các chuyên ngành luật, chuyên đào tạo nguồn nhân lực pháp lý có năng lực tư duy, phân tích và vận dụng pháp luật vào các hoạt động kinh doanh, thương mại trong nền kinh tế thị trường hiện đại.
+Chương trình đào tạo được thiết kế toàn diện, giúp sinh viên phát triển đồng thời cả kiến thức chuyên môn lẫn kỹ năng nghề nghiệp. Người học được trang bị nền tảng kiến thức liên ngành gồm: kinh tế học, quản trị học, logic học, xã hội học, tâm lý học, công nghệ thông tin, tiếng Anh và đặc biệt là tiếng Anh chuyên ngành Luật kinh tế, cũng như kỹ năng tư duy đổi mới sáng tạo và khởi nghiệp – đáp ứng yêu cầu ngày càng cao của thị trường lao động trong nước và quốc tế.
+Ở khối kiến thức cơ sở ngành Luật, sinh viên tiếp cận hệ thống lý luận và thực tiễn về nhà nước và pháp luật, luật Hiến pháp, luật Dân sự và Tố tụng dân sự, luật Hình sự và Tố tụng hình sự, luật Hành chính và Tố tụng hành chính, luật Quốc tế và luật Sở hữu trí tuệ – nền tảng quan trọng giúp người học hình thành tư duy pháp lý hệ thống và toàn diện.
+ 
+Chuyên sâu hơn, sinh viên được học các nội dung đặc thù của ngành Luật Kinh tế như: pháp luật thương mại, thương mại điện tử, thương mại quốc tế, doanh nghiệp, đầu tư, cạnh tranh, chứng khoán, ngân hàng, bảo hiểm kinh doanh, logistics, bất động sản, kinh doanh y tế và an toàn thực phẩm, lao động, đất đai và giải quyết tranh chấp trong kinh doanh – thương mại. Đây là những lĩnh vực pháp lý có tính ứng dụng cao, gắn liền với hoạt động thực tiễn của doanh nghiệp và thị trường.
 1. MỤC TIÊU ĐÀO TẠO
-Cử nhânluật kinh tếHUITđược đào tạo theo định hướng thực hành, với phương châm “Học đi đôi với hành“, “Tinh thông kiến thức hôm nay, vững vàng nghề nghiệp ngày mai”;
-Rèn luyện các kỹ năng nghề luật như kỹ năng tư duy logic, kỹ năng lập luận, phản biện các tình huống pháp lý, các vấn đề xã hội; Kỹ năng hùng biện, tranh luận bảo vệ quan điểm đúng, lẽ phải, sự công bằng; Kỹ năng đàm phán, thương lượng; Kỹ năng soạn thảo hợp đồng; Kỹ năng tranh tụng tại phiên tòa, phiên điều trần, phiên họp, phiên hòa giải để giải quyết tranh chấp kinh doanh thương mại tại Tòa án, Trọng tài thương mại, Trung tâm hòa giải thương mại; Kỹ năng tư vấn pháp luật cho cá nhân đầu tư kinh doanh.
-Khả năng tiếp tục học lên trình độ thạc sĩluật kinh tế.
-Kỳ vọng 3 đến 5 năm sau khi tốt nghiệp và công tác đúng chuyên ngành, cử nhânluật kinh tếHUITcó khả năng học tập nâng cao trình độ chuyên môn, kiến thức lý luận và thực tiễn để trở Thẩm phán, Kiểm sát viên, Chấp hành viên, Luật sư, Công chứng viên, Quản tài viên, Thừa phát lại, Hòa giải viên thương mại, Trọng tài viên thương mại, Giám đốc Công ty luật.
+ Cử nhân luật kinh tế HUIT được đào tạo theo định hướng thực hành, với phương châm “Học đi đôi với hành“, “Tinh thông kiến thức hôm nay, vững vàng nghề nghiệp ngày mai”;
+ Rèn luyện các kỹ năng nghề luật như kỹ năng tư duy logic, kỹ năng lập luận, phản biện các tình huống pháp lý, các vấn đề xã hội; Kỹ năng hùng biện, tranh luận bảo vệ quan điểm đúng, lẽ phải, sự công bằng; Kỹ năng đàm phán, thương lượng; Kỹ năng soạn thảo hợp đồng; Kỹ năng tranh tụng tại phiên tòa, phiên điều trần, phiên họp, phiên hòa giải để giải quyết tranh chấp kinh doanh thương mại tại Tòa án, Trọng tài thương mại, Trung tâm hòa giải thương mại; Kỹ năng tư vấn pháp luật cho cá nhân đầu tư kinh doanh.
+ Khả năng tiếp tục học lên trình độ thạc sĩ luật kinh tế.
+ Kỳ vọng 3 đến 5 năm sau khi tốt nghiệp và công tác đúng chuyên ngành, cử nhân luật kinh tế HUIT có khả năng học tập nâng cao trình độ chuyên môn, kiến thức lý luận và thực tiễn để trở Thẩm phán, Kiểm sát viên, Chấp hành viên, Luật sư, Công chứng viên, Quản tài viên, Thừa phát lại, Hòa giải viên thương mại, Trọng tài viên thương mại, Giám đốc Công ty luật.
 2. CƠ HỘI NGHỀ NGHIỆP
-Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-Thư ký tại văn phòng luật sư, văn phòng công chứng, văn phòng thừa phát lại, trung tâm trọng tài thương mại;
-Thư ký tại các cơ quan hành chính nhà nước, tòa án, viện kiểm sát, cơ quan thi hành án;
-Chuyên viên pháp lý trong các doanh nghiệp trong nước và nước ngoài;
-Tư vấn viên pháp luật về doanh nghiệp, đầu tư kinh doanh, sở hữu trí tuệ, cạnh tranh, hợp đồng thương mại cho các doanh nghiệp, cá nhân có hoạt động đầu tư kinh doanh;
-Thành lập công ty luật để cung ứng dịch vụ pháp lý;
-Cán bộ giảng dạy các môn học chuyên ngành luật kinh tế trong các trường cao đẳng, trung cấp
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+ Thư ký tại văn phòng luật sư, văn phòng công chứng, văn phòng thừa phát lại, trung tâm trọng tài thương mại;
+ Thư ký tại các cơ quan hành chính nhà nước, tòa án, viện kiểm sát, cơ quan thi hành án;
+ Chuyên viên pháp lý trong các doanh nghiệp trong nước và nước ngoài;
+ Tư vấn viên pháp luật về doanh nghiệp, đầu tư kinh doanh, sở hữu trí tuệ, cạnh tranh, hợp đồng thương mại cho các doanh nghiệp, cá nhân có hoạt động đầu tư kinh doanh;
+ Thành lập công ty luật để cung ứng dịch vụ pháp lý;
+ Cán bộ giảng dạy các môn học chuyên ngành luật kinh tế trong các trường cao đẳng, trung cấp
+ 
 3. ĐIỀU KIỆN TUYỂN SINH
-🔰Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-Phương thức tuyển sinh:
+ Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
+ Tổ hợp xét tuyển:
 C00 - Ngữ văn, Lịch sử, Địa lý
 C03 - Ngữ văn, Toán học, Lịch sử
 C14 - Toán học, Ngữ văn, Giáo dục Kinh tế và Pháp luật
 D01 - Toán học, Ngữ văn, Tiếng anh
-4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-Các môn học chuyên ngành tiêu biểu
-Những tố chất phù hợp với ngành
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Pháp luật chủ thể kinh doanh
+ Pháp luật thương mại hàng hóa, dịch vụ
+ Pháp luật thương mại điện tử
+ Luật ngân hàng
+ Pháp luật cạnh tranh và bảo vệ quyền lợi người tiêu dùng
+ Pháp luật ngân sách nhà nước, thuế
+ Pháp luật về luật sư, công chứng, thừa phát lại
+ Quản lý tài sản trí tuệ trong doanh nghiệp
+ Hợp đồng thương mại quốc tế và các giao dịch kinh doanh quốc tế
+ Đạo đức nghề luật và kỹ năng tư vấn pháp luật
+ Luật đầu tư
+ Pháp luật kinh doanh bảo hiểm, logistics, vận tải đa phương thức
+ Pháp luật xây dựng, nhà ở, kinh doanh bất động sản
+ Giải quyết tranh chấp thương mại
+ Luật thương mại quốc tế
+ Những tố chất phù hợp với ngành 
+ Ý thức tổ chức, kỷ luật, chấp hành pháp luật, sống và làm việc theo Hiến pháp và pháp luật;
+ Khả năng tư duy logic, khả năng tranh luận, phản biện;
+ Khả năng làm việc độc lập và làm việc nhóm;
+ Tính trung thực, khách quan và công bằng trong xử lý công việc;
+ Khả năng giao tiếp, thuyết phục, thương lượng;
+ Năng động, sáng tạo, kiên định mục tiêu.
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
-Được đào tạo kiến thức lý luận và kỹ năng nghề nghiệp phù hợp với yêu cầu của các doanh nghiệp và các tổ chức hành nghề luật;
-Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
-Được tham gia sinh hoạt học thuật tại Câu lạc bộ Pháp lý HUIT;
-Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
-Được hỗ trợ vay vốn học tập.
-Thời gian đào tạo: 3,5 năm.
----
-Để biết thêm thông tin tuyển sinh, liên hệ ngay:
-Điện thoại: (028) 6270 6275
-Hotline: 096 205 1080
-Website:http://ts.huit.edu.vn
+ Được đào tạo kiến thức lý luận và kỹ năng nghề nghiệp phù hợp với yêu cầu của các doanh nghiệp và các tổ chức hành nghề luật;
+ Được hỗ trợ giới thiệu nơi thực tập và việc làm khi tốt nghiệp;
+ Được tham gia sinh hoạt học thuật tại Câu lạc bộ Pháp lý HUIT;
+ Được hưởng các chế độ ưu đãi dành cho người học theo quy chế của Trường Đại học công lập.
+ Được hỗ trợ vay vốn học tập.
+ Thời gian đào tạo: 3,5 năm.

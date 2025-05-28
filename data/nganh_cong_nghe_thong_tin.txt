@@ -1,11 +1,72 @@
 URL: https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-thong-tin
 Mã ngành: 7480201
-Ngành Công nghệ Thông tin
+
+NGÀNH CÔNG NGHỆ THÔNG TIN
+ 
+MÃ NGÀNH: 7480201
+Công nghệ thông tin hiểu theo nghĩa rộng là việc sử dụng máy tính và phần mềm máy tính vào việc tạo ra, lưu trữ, xử lý và truyền dẫn thông tin. Theo học ngành này, sinh viên sẽ được đào tạo các kiến thức chuyên sâu tùy theo chuyên ngành mình lựa chọn như: Khoa học máy tính, Kỹ thuật máy tính, Hệ thống thông tin, Mạng máy tính truyền thông, Kỹ thuật phần mềm,...
+1. MỤC TIÊU ĐÀO TẠO
+ Trang bị khối kiến thức đại cương về khoa học tự nhiên và đào tạo kiến thức chuyên sâu về công nghệ phần mềm, hệ thống thông tin, mạng máy tính, kỹ thuật máy tính; kỹ năng triển khai ứng dụng công nghệ thông tin và nắm bắt các xu thế công nghệ mới. Sinh viên có khả năng lập trình các phần mềm máy tính, điện thoại di động, game, thương mại điện tử; xây dựng hệ thống thông tin; phân tích và lập dự án triển khai các phần mềm ứng dụng;...
+ Bên cạnh kỹ năng làm việc theo nhóm, kỹ năng giao tiếp, sinh viên còn được phát triển khả năng tự nghiên cứu, thử nghiệm để ứng dụng công nghệ đáp ứng các nhu cầu thực tế của đời sống.
+ 
+2. CƠ HỘI NGHỀ NGHIỆP
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+  Lập trình viên phần mềm, chuyên viên phân tích thiết kế hệ thống, quản lý dữ liệu, quản trị mạng, kỹ thuật phần cứng máy tính,... tại các công ty phần mềm, công ty cung cấp giải pháp về công nghệ thông tin, công ty sản xuất, lắp ráp, sửa chữa trang thiết bị phần cứng.
+ Trở thành chuyên gia quản lý, điều phối các dự án công nghệ thông tin tại các tập đoàn, doanh nghiệp, tổ chức thương mại điện tử trong và ngoài nước.
+ Trở thành cán bộ nghiên cứu, cán bộ giảng dạy về công nghệ thông tin tại các viện, trung tâm nghiên cứu và các cơ sở đào tạo;
+ Học tiếp lên trình độ sau đại học tại các trường đại học, viện nghiên cứu trong và ngoài nước.
+ 
+3. ĐIỀU KIỆN TUYỂN SINH
+ Phương thức tuyển sinh:
+1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
+2. Xét tuyển học bạ THPT.
+3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
+4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
+5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
+ Tổ hợp xét tuyển:
+A00 – Toán học, Vật lí, Hóa học
+C01 - Ngữ văn, Toán học, Vật lý
+D01 - Toán học, Ngữ văn, Tiếng anh
+        - Toán học, Anh văn, Tin học 
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Cơ sở dữ liệu
+ Mạng máy tính
+ Hệ điều hành
+ Lập trình Web
+ Trí tuệ nhân tạo
+ Công nghệ Java
+ Công nghệ .NET
+ Công nghệ phần mềm
+ Lập trình di động
+ Kiểm định phần mềm
+ Bảo mật cơ sở dữ liệu
+ Lập trình mạng.
+ Phân tích và thiết kế hệ thống thông tin
+ Thiết kế cơ sở dữ liệu
+ Những tố chất phù hợp với ngành 
+ Thông minh, năng động, có đam mê
+ Học tốt các môn tự nhiên
+ Có tư duy logic, tư duy hệ thống
+ Có tính kiên trì, sáng tạo
+ Nhạy bén, tiếp cận nhanh, chủ động trong công việc
+ Có tinh thần hợp tác, khả năng làm việc theo nhóm.
+ 
+5. QUYỀN LỢI CỦA NGƯỜI HỌC
+ Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
+ Được hỗ trợ giới thiệu việc làm trong thời gian học và sau khi tốt nghiệp.
+ Được tham gia các lớp kỹ năng mềm; Các lớp đổi mới sáng tạo và khởi nghiệp của trường tổ chức.
+ Được hưởng mọi chế độ theo quy chế của trường ĐH Công lập.
+ Hỗ trợ vay vốn học tập.
+ Thời gian đào tạo: 3,5 - 4 năm.
+
+Thông tin thêm:
 Vị thế và Nhu cầu nhân lực: Ngành Công nghệ Thông tin (CNTT) ngày càng khẳng định vị thế trong mọi phương diện, ngành nghề, lĩnh vực. Được mệnh danh là "vua của mọi ngành". Nhu cầu nhân lực ngày càng cao. Theo báo cáo xu hướng tuyển dụng 2023 của Top CV, nhu cầu tuyển dụng nguồn nhân lực CNTT luôn cao bất chấp làn sóng sa thải/thất nghiệp các ngành khác. Nhu cầu nhân sự rất cao. Việt Nam vẫn sẽ thiếu hụt từ 150 ngàn tới 200 ngàn lập trình viên/kỹ sư CNTT mỗi năm. Sự thiếu hụt này là thách thức lớn nhưng cũng là cơ hội. Vấn đề "hot" nhân lực này được đánh giá sẽ còn kéo dài trong vài năm tới.
 Mức lương: Mức lương hấp dẫn và cơ hội việc làm rộng mở. Luôn dẫn đầu về mức lương trong số 10 ngành nghề khảo sát của Top CV 2023. Giúp người lao động có được thu nhập đáng mơ ước.
 Khoa: Khoa Công nghệ Thông tin. Nhà trường đã đầu tư "khủng" (hàng chục tỷ đồng) để đào tạo khối ngành này.
 Các chuyên ngành đào tạo: Khoa CNTT hiện đang đào tạo ba chuyên ngành:
-hoa học Dữ liệu
+Khoa học Dữ liệu
 Công nghệ Thông tin
 An toàn Thông tin
 Chương trình đào tạo: Cả ba chương trình được thiết kế rất linh hoạt và chủ động cho người học. Sinh viên tích lũy đủ 121 tín chỉ sau 7 học kỳ có thể được xét tốt nghiệp cử nhân. Sau khi hoàn thành chương trình cử nhân, sinh viên có thể bắt đầu đi làm ngay. Chương trình gồm bốn khối kiến thức (kiến thức chung, kiến thức ngành, chuyên ngành và lựa chọn). Thiết kế tích hợp cân bằng giữa kiến thức nền tảng với công nghệ kỹ thuật mới và chú trọng đến kỹ năng thực hành và năng lực ứng dụng sáng tạo. Định hướng theo thời đại hiện nay.
@@ -18,52 +79,3 @@ Cơ hội việc làm: Số liệu khảo sát 5 năm gần đây nhất của K
 Ngoại ngữ: Sinh viên được đào tạo kỹ năng ngoại ngữ ngay từ sớm. Khi tốt nghiệp có trình độ ngoại ngữ có thể làm việc chuyên nghiệp với các đối tác nước ngoài.
 Giảng viên: Sinh viên được các giảng viên giàu kinh nghiệm, chuyên gia từ các doanh nghiệp trong lĩnh vực giảng dạy trực tiếp.
 Tố chất phù hợp: Ngành top đầu, đòi hỏi chuyên môn cao. Cần sự tỉ mỉ, cẩn thận. Đam mê và hứng thú với công nghệ.
-Công nghệ thông tin hiểu theo nghĩa rộng là việc sử dụng máy tính và phần mềm máy tính vào việc tạo ra, lưu trữ, xử lý và truyền dẫn thông tin. Theo học ngành này, sinh viên sẽ được đào tạo các kiến thức chuyên sâu tùy theo chuyên ngành mình lựa chọn như: Khoa học máy tính, Kỹ thuật máy tính, Hệ thống thông tin, Mạng máy tính truyền thông, Kỹ thuật phần mềm,...
-1. MỤC TIÊU ĐÀO TẠO
- Trang bị khối kiến thức đại cương vềkhoa học tự nhiên vàđào tạo kiến thức chuyên sâu về công nghệ phần mềm, hệthống thông tin, mạng máy tính, kỹthuật máy tính; kỹnăng triển khaiứng dụng công nghệthông tin và nắm bắt các xu thếcông nghệmới. Sinh viên có khảnăng lập trình các phần mềm máy tính,điện thoại diđộng, game, thương mại điện tử; xây dựng hệthống thông tin; phân tích và lập dựán triển khai các phần mềmứng dụng;...
- Bên cạnh kỹnăng làm việc theo nhóm, kỹnăng giao tiếp, sinh viên cònđược phát triển khảnăng tựnghiên cứu, thửnghiệmđểứng dụng công nghệđápứng các nhu cầu thực tếcủađời sống.
-2. CƠ HỘI NGHỀ NGHIỆP
-Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
- Lập trình viên phần mềm, chuyên viên phân tích thiết kếhệthống, quản lý dữliệu, quản trịmạng, kỹthuật phần cứng máy tính,... tại các công ty phần mềm, công ty cung cấp giải pháp về công nghệthông tin, công ty sản xuất, lắp ráp, sửa chữa trang thiết bịphần cứng.
- Trởthành chuyên gia quản lý,điều phối các dựán công nghệthông tin tại các tậpđoàn, doanh nghiệp, tổchức thương mại điện tử trong và ngoài nước.
- Trởthành cán bộnghiên cứu, cán bộgiảng dạy về công nghệthông tin tại các viện, trung tâm nghiên cứu và các cơsởđào tạo;
- Học tiếp lên trìnhđộsauđại học tại các trườngđại học, viện nghiên cứu trong và ngoài nước.
-3. ĐIỀU KIỆN TUYỂN SINH
-🔰Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
-2. Xét tuyển học bạ THPT.
-3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
-4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
-5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-A00 – Toán học, Vật lí, Hóa học
-C01 - Ngữ văn, Toán học, Vật lý
-D01 - Toán học, Ngữ văn, Tiếng anh
-- Toán học, Anh văn, Tin học
-4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-Các môn học chuyên ngành tiêu biểu
- Công nghệ.NET
- Công nghệphần mềm
- Lập trình diđộng
- Kiểmđịnh phần mềm
- Bảo mật cơsởdữliệu
- Lập trình mạng.
- Phân tích và thiết kếhệthống thông tin
- Thiết kếcơsởdữliệu
-Những tố chất phù hợp với ngành
-5. QUYỀN LỢI CỦA NGƯỜI HỌC
-Đượcđào tạo chuyên môn kỹthuật theo yêu cầu của nhà tuyển dụng.
-Được hỗtrợgiới thiệu việc làm trong thời gian học và sau khi tốt nghiệp.
-Được tham gia các lớp kỹnăng mềm; Các lớpđổi mới sáng tạo và khởi nghiệp của trường tổchức.
-Được hưởng mọi chếđộtheo quy chếcủa trườngĐH Công lập.
- Hỗtrợvay vốn học tập.
- Thời gianđào tạo: 3,5 - 4 năm.
----
-Để biết thêm thông tin tuyển sinh, liên hệ ngay:
-Điện thoại: (028) 6270 6275
-Hotline: 096 205 1080
-Website:http://ts.huit.edu.vn

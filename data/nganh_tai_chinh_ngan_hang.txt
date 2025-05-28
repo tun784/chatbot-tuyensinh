@@ -1,55 +1,62 @@
 URL: https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang
 Mã ngành: 7340201
 
-Ngành tài chính ngân hàng
-Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.
+NGÀNH TÀI CHÍNH NGÂN HÀNG
+MÃ NGÀNH: 7340201
+Tài chính – Ngân hàng là ngành học rộng và năng động, liên quan trực tiếp đến mọi hoạt động giao dịch tài chính, lưu thông và vận hành tiền tệ trong nền kinh tế. Đây là lĩnh vực then chốt, đóng vai trò huyết mạch giúp duy trì và thúc đẩy hoạt động sản xuất – kinh doanh, đầu tư và phát triển của xã hội hiện đại.
+Sinh viên theo học ngành này sẽ được trang bị kiến thức vững chắc về hệ thống tài chính, thị trường tiền tệ, chính sách tài khóa – tiền tệ, quản trị tài chính, đầu tư, tín dụng, ngân hàng thương mại, bảo hiểm và quản lý rủi ro tài chính. Ngoài ra, người học còn được phát triển các kỹ năng phân tích tài chính, dự báo, ra quyết định đầu tư và sử dụng hiệu quả các công cụ, phần mềm tài chính hiện đại.
+ 
+Tài chính – Ngân hàng bao gồm nhiều chuyên ngành phong phú như: ngân hàng thương mại, tài chính doanh nghiệp, tài chính công, tài chính thuế, tài chính bảo hiểm, chứng khoán và đầu tư,... giúp sinh viên có thể lựa chọn hướng đi phù hợp với năng lực và định hướng nghề nghiệp.
 1. MỤC TIÊU ĐÀO TẠO
-Ngành Tài chính - ngân hàng có 8 chuyên ngành: Tín dụng ngân hàng, Quản trị ngân hàng thương mại, Tài chính ngân hàng, Quản trị đầu tư tài chính, Thẩm định giá, Thuế, Tài chính - Bảo hiểm, Phân tích tài chính doanh nghiệp.
-Đào tạo kiến thức cơ bản và chuyên sâu liên quan đến tài chính – tiền tệ và các quy trình hoạt động tài chính, thống kê, kế toán, thuế, bảo hiểm trong ngân hàng và doanh nghiệp.
-Sinh viên tốt nghiệp có khả năng đảm trách các vị trí tại ngân hàng, công ty, tập đoàn tài chính như nghiệp vụ huy động vốn, nghiệp vụ thanh toán tiền tệ, kinh doanh ngoại hối, kiểm soát và quản lý rủi ro, thẩm định tài sản doanh nghiệp, phân tích tài chính, quản trị hoạt động ngân hàng, kế toán ngân hàng,…
-Bên cạnh đó, sinh viên còn được tăng cường đào tạo ngoại ngữ, tin học và các kỹ năng nghiệp vụ cần thiết như giao tiếp, tư vấn, đàm phán, thuyết phục khách hàng.
+ Ngành Tài chính - ngân hàng có 8 chuyên ngành: Tín dụng ngân hàng, Quản trị ngân hàng thương mại, Tài chính ngân hàng, Quản trị đầu tư tài chính, Thẩm định giá, Thuế, Tài chính - Bảo hiểm, Phân tích tài chính doanh nghiệp.
+ Đào tạo kiến thức cơ bản và chuyên sâu liên quan đến tài chính – tiền tệ và các quy trình hoạt động tài chính, thống kê, kế toán, thuế, bảo hiểm trong ngân hàng và doanh nghiệp. 
+ Sinh viên tốt nghiệp có khả năng đảm trách các vị trí tại ngân hàng, công ty, tập đoàn tài chính như nghiệp vụ huy động vốn, nghiệp vụ thanh toán tiền tệ, kinh doanh ngoại hối, kiểm soát và quản lý rủi ro, thẩm định tài sản doanh nghiệp, phân tích tài chính, quản trị hoạt động ngân hàng, kế toán ngân hàng,…
+ Bên cạnh đó, sinh viên còn được tăng cường đào tạo ngoại ngữ, tin học và các kỹ năng nghiệp vụ cần thiết như giao tiếp, tư vấn, đàm phán, thuyết phục khách hàng.
+ 
 2. CƠ HỘI NGHỀ NGHIỆP
-Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
-Chuyên viên phụ trách tài chính, kinh doanh tiền tệ, phân tích tài chính doanh nghiệp tại các ngân hàng, tổ chức tín dụng, công ty chứng khoán, công ty bảo hiểm, tập đoàn tài chính như: ACB, Sacombank, Vietinbank, ANZ, KPMG, Bảo Việt, Dai-ichilife, ACE Group,…
-Chuyên viên thu hồi nợ, chăm sóc khách hàng tại các ngân hàng, công ty
-Tổ chức, điều hành công tác tài chính và kế toán hoặc tư vấn về lĩnh vực tài chính, ngân hàng cho các doanh nghiệp trong và ngoài nước.
-Tham gia giảng dạy tại các trường TC, CĐ có đào tạo chuyên ngành tài chính.
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+ Chuyên viên phụ trách tài chính, kinh doanh tiền tệ, phân tích tài chính doanh nghiệp tại các ngân hàng, tổ chức tín dụng, công ty chứng khoán, công ty bảo hiểm, tập đoàn tài chính như: ACB, Sacombank, Vietinbank, ANZ, KPMG, Bảo Việt, Dai-ichilife, ACE Group,…
+ Chuyên viên thu hồi nợ, chăm sóc khách hàng tại các ngân hàng, công ty
+ Tổ chức, điều hành công tác tài chính và kế toán hoặc tư vấn về lĩnh vực tài chính, ngân hàng cho các doanh nghiệp trong và ngoài nước.
+ Tham gia giảng dạy tại các trường TC, CĐ có đào tạo chuyên ngành tài chính.
+ 
 3. ĐIỀU KIỆN TUYỂN SINH
-🔰Phương thức tuyển sinh:
-🔰
-Phương thức tuyển sinh:
-Phương thức tuyển sinh:
-1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
-2. Xét tuyển học bạ THPT.
-2. Xét tuyển học bạ THPT.
-3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
-4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
-5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-🔰Tổ hợp xét tuyển:
-🔰
-Tổ hợp xét tuyển:
-Tổ hợp xét tuyển:
-A00 – Toán học, Vật lí, Hóa học
-A01 – Toán học, Vật lý, Tiếng Anh
-C01 – Ngữ văn, Toán học, Vật lý
-D01– Toán học, Ngữ văn, Tiếng Anh
-Phương thức tuyển sinh:
+ Phương thức tuyển sinh:
 1. Xét tuyển thí sinh theo kết quả điểm thi tốt nghiệp THPT năm 2025.
 2. Xét tuyển học bạ THPT.
 3. Xét tuyển thí sinh theo kết quả điểm bài thi ĐGNL ĐHQG - HCM năm 2025.
 4. Xét tuyển thẳng theo Quy chế tuyển sinh đại học của Bộ Giáo dục & Đào tạo.
 5. Xét tuyển theo kết quả điểm bài thi đánh giá năng lực chuyên biệt của trường Đại học sư phạm TP.HCM kết hợp kết quả học tập THPT theo tổ hợp môn ứng với từng ngành.
-Tổ hợp xét tuyển:
+ Tổ hợp xét tuyển:
 A00 – Toán học, Vật lí, Hóa học
 A01 – Toán học, Vật lý, Tiếng Anh
 C01 – Ngữ văn, Toán học, Vật lý
 D01– Toán học, Ngữ văn, Tiếng Anh
-4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
-Các môn học chuyên ngành tiêu biểu
-Những tố chất phù hợp với ngành
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Tài chính doanh nghiệp
+ Tài chính quốc tế
+ Thị trường chứng khoán
+ Thẩm định tín dụng
+ Kế toán tài chính
+ Thanh toán quốc tế
+ Tài chính công
+ Ngân hàng thương mại
+ Kế toán ngân hàng
+ Phân tích tài chính doanh nghiệp
+ Thiết lập và thẩm định dự án đầu tư
+ Quản trị ngân hàng
+ Những tố chất phù hợp với ngành 
+ Có khả năng tính toán, tư duy logic..
+ Cẩn trọng, cẩn thận, năng động, tự tin, quyết đoán
+ Chịu áp lực tốt, thích môi trường cạnh tranh
+ Có năng khiếu về ngoại ngữ, tin học.
+ 
 5. QUYỀN LỢI CỦA NGƯỜI HỌC
----
-Để biết thêm thông tin tuyển sinh, liên hệ ngay:
-Điện thoại: (028) 6270 6275
-Hotline: 096 205 1080
-Website:http://ts.huit.edu.vn
+ Được đào tạo chuyên môn kỹ thuật theo yêu cầu của nhà tuyển dụng.
+ Được hỗ trợ giới thiệu việc làm trong thời gian học và sau khi tốt nghiệp.
+ Được tham gia các lớp kỹ năng mềm; Các lớp đổi mới sáng tạo và khởi nghiệp của trường tổ chức.
+ Được hưởng mọi chế độ theo quy chế của trường ĐH Công lập.
+ Hỗ trợ vay vốn học tập.
+ Thời gian đào tạo: 3,5 năm.

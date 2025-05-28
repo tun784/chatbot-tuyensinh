@@ -7,7 +7,6 @@ import os
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
-
 def remove_symbols_and_emojis(text):
     """Loại bỏ các icon và emoji phổ biến."""
     text = text.replace("🔰", "")
@@ -26,8 +25,6 @@ def remove_symbols_and_emojis(text):
         "\U0001FA00-\U0001FA6F"  # Chess Symbols & More
         "\U0001FA70-\U0001FAFF"  # Symbols and Pictographs Extended-A
         "\U00002700-\U000027BF"  # Dingbats
-        "\U000024C2-\U0001F251" 
-        "\U00002600-\U000026FF"  # Miscellaneous Symbols
         "]+", flags=re.UNICODE
     )
     return emoji_pattern.sub(r'', text)
@@ -35,18 +32,13 @@ def remove_symbols_and_emojis(text):
 def clean_text_content(text):
     """Làm sạch văn bản: Chuẩn hóa khoảng trắng và loại bỏ phần thừa."""
     # Loại bỏ footer (nếu có)
-    text = re.split(r"Để biết thêm thông tin tuyển sinh", text, flags=re.IGNORECASE)[0]
-    text = re.split(r"Xem thêm :", text, flags=re.IGNORECASE)[0]
-    
+    text = re.split(r"---", text, flags=re.IGNORECASE)[0]
     # Loại bỏ icon và emoji
     text = remove_symbols_and_emojis(text)
 
-    # Thay thế nhiều lần xuống dòng/khoảng trắng bằng một khoảng trắng
-    # text = re.sub(r'\s+', '\n', text)
-
-    # (Tùy chọn) Cố gắng sửa từ dính liền - Cần kiểm tra kỹ!
-    # text = re.sub(r'([a-zà-ỹ])([A-ZÀ-Ỹ])', r'\1 \2', text)
-    
+    text = re.sub(r'\n+', '\n', text)      # Nhiều \n thành một \n
+    # Thay thế tab bằng dấu cách
+    text = text.replace('\t', ' ')
     return text.strip()
 
 def remove_accents(text):
@@ -66,10 +58,9 @@ def slugify(text):
     return text.strip('_')
 
 def crawl_page(url):
-    """Crawl một trang và trích xuất thông tin."""
     print(f">>> Đang crawl: {url}")
     try:
-        response = requests.get(url, headers=headers, timeout=15)
+        response = requests.get(url, headers = headers, timeout=15)
         response.raise_for_status() # Báo lỗi nếu request không thành công
         response.encoding = "utf-8"
         soup = BeautifulSoup(response.text, "html.parser")
@@ -82,12 +73,12 @@ def crawl_page(url):
         raw_text = ""
         if main_table:
             print("    -> Tìm thấy MsoNormalTable. Đang lấy text...")
-            raw_text = main_table.get_text(separator=" ", strip=True)
+            raw_text = main_table.get_text(strip=False)
         else:
             print("    -> Không thấy MsoNormalTable, thử 'post-body'...")
             post_body = soup.find("div", class_="post-body")
             if post_body:
-                raw_text = post_body.get_text(separator=" ", strip=True)
+                raw_text = post_body.get_text(strip=False)
             else:
                 print(f"    [!] Không tìm thấy nội dung chính tại: {url}")
                 return None # Trả về None nếu không lấy được nội dung
@@ -116,7 +107,7 @@ def crawl_page(url):
         print(f"[!] Lỗi không xác định khi crawl {url}: {e}")
         return None
 
-def crawl_all(urls, output_dir="output_"):
+def crawl_all(urls, output_dir="output"):
     """Crawl tất cả URL và lưu vào thư mục 'data'."""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
