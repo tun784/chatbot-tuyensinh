@@ -3,164 +3,139 @@ import unicodedata
 from bs4 import BeautifulSoup
 import re
 import os
-import string
+
 headers = {
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
-def remove_emojis(text):
+
+def remove_symbols_and_emojis(text):
+    """Loại bỏ các icon và emoji phổ biến."""
+    text = text.replace("🔰", "")
+    text = text.replace("🔶", "")
+    text = text.replace("🔸", "")
+    
     emoji_pattern = re.compile(
         "["
-        "\U0001F600-\U0001F64F"  # Mặt cười, cảm xúc
-        "\U0001F300-\U0001F5FF"  # Biểu tượng khác (mây, thời tiết, v.v.)
-        "\U0001F680-\U0001F6FF"  # Phương tiện giao thông, biểu tượng bản đồ
-        "\U0001F700-\U0001F77F"  # Biểu tượng alchemical
-        "\U0001F780-\U0001F7FF"  # Biểu tượng hình học mở rộng
-        "\U0001F800-\U0001F8FF"  # Biểu tượng mũi tên
-        "\U0001F900-\U0001F9FF"  # Biểu tượng bổ sung
-        "\U0001FA00-\U0001FA6F"  # Biểu tượng bổ sung khác
-        "\U0001FA70-\U0001FAFF"
-        "\U00002700-\U000027BF"  # Dấu đặc biệt (bao gồm 🔰)
-        "\U000024C2-\U0001F251"
+        "\U0001F600-\U0001F64F"  # emoticons
+        "\U0001F300-\U0001F5FF"  # symbols & pictographs
+        "\U0001F680-\U0001F6FF"  # transport & map symbols
+        "\U0001F700-\U0001F77F"  # alchemical symbols
+        "\U0001F780-\U0001F7FF"  # Geometric Shapes Extended
+        "\U0001F800-\U0001F8FF"  # Supplemental Arrows-C
+        "\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+        "\U0001FA00-\U0001FA6F"  # Chess Symbols & More
+        "\U0001FA70-\U0001FAFF"  # Symbols and Pictographs Extended-A
+        "\U00002700-\U000027BF"  # Dingbats
+        "\U000024C2-\U0001F251" 
+        "\U00002600-\U000026FF"  # Miscellaneous Symbols
         "]+", flags=re.UNICODE
     )
     return emoji_pattern.sub(r'', text)
-# Hàm loại bỏ phần footer không cần thiết
-def clean_html_footer(html):
-    # Cắt bỏ đoạn cuối nếu có cụm này
-    parts = re.split(r"Để biết thêm thông tin tuyển sinh", html, flags=re.IGNORECASE)
-    return parts[0]
+
+def clean_text_content(text):
+    """Làm sạch văn bản: Chuẩn hóa khoảng trắng và loại bỏ phần thừa."""
+    # Loại bỏ footer (nếu có)
+    text = re.split(r"Để biết thêm thông tin tuyển sinh", text, flags=re.IGNORECASE)[0]
+    text = re.split(r"Xem thêm :", text, flags=re.IGNORECASE)[0]
+    
+    # Loại bỏ icon và emoji
+    text = remove_symbols_and_emojis(text)
+
+    # Thay thế nhiều lần xuống dòng/khoảng trắng bằng một khoảng trắng
+    # text = re.sub(r'\s+', '\n', text)
+
+    # (Tùy chọn) Cố gắng sửa từ dính liền - Cần kiểm tra kỹ!
+    # text = re.sub(r'([a-zà-ỹ])([A-ZÀ-Ỹ])', r'\1 \2', text)
+    
+    return text.strip()
 
 def remove_accents(text):
+    """Loại bỏ dấu tiếng Việt."""
     return ''.join(
         c for c in unicodedata.normalize('NFD', text)
         if unicodedata.category(c) != 'Mn'
     )
 
-# Hàm trích xuất Mã ngành từ HTML
-def extract_ma_nganh(soup):
-    candidates = soup.find_all(string=re.compile(r"Mã ngành[:\s]?", re.IGNORECASE))
-    for txt in candidates:
-        full = txt.strip()
-        # Trường hợp mã nằm cùng text
-        m = re.search(r"\d{6,}", full)
-        if m:
-            return m.group(0)
-        # Trường hợp mã ở thẻ kế tiếp
-        if txt.parent:
-            sib = txt.parent.find_next_sibling(string=re.compile(r"\d{6,}"))
-            if sib:
-                m2 = re.search(r"\d{6,}", sib.strip())
-                if m2:
-                    return m2.group(0)
-    return None
+def slugify(text):
+    """Chuyển text thành tên file hợp lệ (slug)."""
+    text = remove_accents(text)
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text) # Chỉ giữ chữ, số, khoảng trắng, gạch ngang
+    text = re.sub(r'\s+', '_', text) # Thay khoảng trắng bằng _
+    text = re.sub(r'__+', '_', text) # Thay nhiều _ bằng 1 _
+    return text.strip('_')
 
 def crawl_page(url):
+    """Crawl một trang và trích xuất thông tin."""
     print(f">>> Đang crawl: {url}")
-    response = requests.get(url, headers=headers)
-    response.encoding = "utf-8"  # Đảm bảo đọc tiếng Việt
-    raw_html = clean_html_footer(response.text)
-    soup = BeautifulSoup(raw_html, "html.parser")
+    try:
+        response = requests.get(url, headers=headers, timeout=15)
+        response.raise_for_status() # Báo lỗi nếu request không thành công
+        response.encoding = "utf-8"
+        soup = BeautifulSoup(response.text, "html.parser")
 
-    ma_nganh = extract_ma_nganh(soup)
+        title_tag = soup.find("h1", class_="article-title")
+        title = title_tag.get_text(strip=True) if title_tag else "unknown_title"
 
-    output_lines = []
+        main_table = soup.find("table", class_="MsoNormalTable")
+        
+        raw_text = ""
+        if main_table:
+            print("    -> Tìm thấy MsoNormalTable. Đang lấy text...")
+            raw_text = main_table.get_text(separator=" ", strip=True)
+        else:
+            print("    -> Không thấy MsoNormalTable, thử 'post-body'...")
+            post_body = soup.find("div", class_="post-body")
+            if post_body:
+                raw_text = post_body.get_text(separator=" ", strip=True)
+            else:
+                print(f"    [!] Không tìm thấy nội dung chính tại: {url}")
+                return None # Trả về None nếu không lấy được nội dung
 
-    title_tag = soup.find("h1")
-    if title_tag:
-        title = title_tag.get_text(strip=True)
-        output_lines.append(f"{title}")
+        noidung = clean_text_content(raw_text)
 
-    # print(soup.prettify())
+        # Tìm Mã ngành bằng Regex
+        ma_nganh = None
+        match = re.search(r"MÃ NGÀNH:\s*(\d{7})", noidung, re.IGNORECASE)
+        if match:
+            ma_nganh = match.group(1)
+            print(f"    -> Tìm thấy Mã ngành: {ma_nganh}")
+        else:
+            print("    -> Không tìm thấy Mã ngành bằng Regex.")
+            
+        return {
+            "url": url,
+            "ma_nganh": ma_nganh,
+            "title": title,
+            "noidung": noidung
+        }
+    except requests.exceptions.RequestException as e:
+        print(f"[!] Lỗi Request khi crawl {url}: {e}")
+        return None
+    except Exception as e:
+        print(f"[!] Lỗi không xác định khi crawl {url}: {e}")
+        return None
 
-    # Xử lý phần sau mã ngành
-    deepest_spans = []
-    for p in soup.find_all('p'):
-        if any(x in p.get_text() for x in ["MÃ NGÀNH:", "Mã ngành:", "mã ngành:"]):
-            ma_nganh_p = p
-            next_p = ma_nganh_p.find_next_sibling('p')
-            if next_p:
-                inner_spans = next_p.find_all('span')
-                for span in inner_spans:
-                    if not span.find('span'):
-                        text = remove_emojis(span.get_text(strip=True))
-                        if text:
-                            deepest_spans.append(text)
-            break
-
-    if deepest_spans:
-        output_lines.append(" ".join(deepest_spans))
-    else:
-        output_lines.append("Không tìm thấy thẻ <span> trong cùng trong thẻ <p> ngay sau thẻ chứa 'MÃ NGÀNH'.")
-
-    # Xử lý nội dung chính + điều kiện tuyển sinh
-    main_content = []
-    extra_content = []
-    found_condition = False
-
-    for p in soup.select('p.MsoNormal'):
-        text = p.get_text(strip=True)
-        if not text:
-            continue
-        main_content.append(text)
-
-        if "3. ĐIỀU KIỆN TUYỂN SINH" in text.upper() and not found_condition:
-            found_condition = True
-            tr_current = p.find_parent('tr')
-            if tr_current:
-                tr_next = tr_current.find_next_sibling('tr')
-                if tr_next:
-                    p_tags = tr_next.find_all('p')
-                    for p_tag in p_tags:
-                        spans = p_tag.find_all('span')
-                        if spans:
-                            for span in spans:
-                                span_text = span.get_text(strip=True)
-                                if span_text:
-                                    extra_content.append(span_text)
-                        else:
-                            p_text = remove_emojis(p_tag.get_text(strip=True))
-                            if p_text:
-                                extra_content.append(p_text)
-
-    for line in main_content:
-        output_lines.append(remove_emojis(line))
-        if "3. ĐIỀU KIỆN TUYỂN SINH" in line.upper() and extra_content:
-            output_lines.extend(extra_content)
-
-    return {
-        "url": url,
-        "ma_nganh": ma_nganh,
-        "title": title if title_tag else None,
-        "noidung": "\n".join(output_lines)
-    }
-
-def slugify(text):
-    """Chuyển mã ngành hoặc tên ngành thành tên file hợp lệ"""
-    return re.sub(r'[^a-zA-Z0-9_-]', '_', text).lower()
-
-def crawl_all(urls, output_dir="data/output_txt"):
+def crawl_all(urls, output_dir="output_"):
+    """Crawl tất cả URL và lưu vào thư mục 'data'."""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
     for idx, url in enumerate(urls):
-        try:
-            data = crawl_page(url)
-            # Tạo tên file: mã ngành hoặc số thứ tự
-            if data["title"]:
-                filename = f"{slugify(remove_accents(data['title']))}.txt"
-            else:
-                filename = f"nganh_{idx + 1}.txt"
+        data = crawl_page(url)
+        if data and data["noidung"]: # Chỉ lưu nếu có dữ liệu
+            filename = f"{slugify(data['title'])}.txt"
             path = os.path.join(output_dir, filename)
 
             with open(path, "w", encoding="utf-8") as f:
                 f.write(f"URL: {data['url']}\n")
-                if data["ma_nganh"]:
-                    f.write(f"Mã ngành: {data['ma_nganh']}\n\n")
+                f.write(f"Mã ngành: {data['ma_nganh'] if data['ma_nganh'] else 'Không tìm thấy'}\n\n")
                 f.write(data["noidung"])
 
-            print(f"✅ Đã lưu: {filename}")
-        except Exception as e:
-            print(f"[!] Lỗi khi crawl {url}: {e}")
+            print(f"     Đã lưu: {filename}")
+        else:
+            print(f"     Bỏ qua URL (Không có dữ liệu): {url}")
+        print("-" * 20) # Thêm dòng phân cách cho dễ nhìn
 
 if __name__ == "__main__":
     danh_sach_url = [
@@ -197,12 +172,3 @@ if __name__ == "__main__":
         "https://ts.huit.edu.vn/nganh-dh/nganh-khoa-hoc-dinh-duong-va-am-thuc"
     ]
     crawl_all(danh_sach_url)
-
-# # ✅ Ghi toàn bộ output vào file
-# with open("che-tao-may.txt", "w", encoding="utf-8") as f:
-#     for line in output_lines:
-#         f.write(line + "\n")
-
-# # ✅ In ra màn hình nếu muốn kiểm tra nhanh
-# for line in output_lines:
-#     print(line)
