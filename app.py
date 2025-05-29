@@ -29,7 +29,7 @@ def chat():
         return jsonify({"error": "Câu hỏi không được để trống."}), 400
 
     # 1. Lấy context bằng embedding
-    context = search_best_chunk_with_embedding(question, threshold=0.7)
+    context = search_best_chunk_with_embedding(question)
     print(f">>> Context gửi vào Google GenAI:\n{context if context else '<<Không tìm thấy context phù hợp>>'}")
     if not context:
         return jsonify({"answer": random.choice(DEFAULT_RESPONSES)})
