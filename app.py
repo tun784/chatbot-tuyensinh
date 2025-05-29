@@ -36,7 +36,7 @@ def chat():
 
     # 2. Gửi vào Google Generative AI
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         prompt = f"""Bạn là một trợ lý ảo tư vấn tuyển sinh cho Trường Đại học Công Thương TP.HCM (HUIT). Nhiệm vụ của bạn là trả lời các câu hỏi của sinh viên và phụ huynh một cách thân thiện, chính xác và **CHỈ DỰA VÀO NỘI DUNG ĐƯỢC CUNG CẤP** dưới đây.
         Nếu câu hỏi không liên quan đến HUIT hoặc không thể trả lời dựa trên nội dung, hãy trả lời một cách lịch sự rằng bạn chưa có thông tin đó hoặc hỏi lại câu hỏi khác.
         Tuyệt đối không tự bịa thông tin. Trả lời ngắn gọn, tập trung vào câu hỏi.
@@ -77,13 +77,17 @@ def chat():
 def serve_ui():
     return send_from_directory(".", "index.html")
 
-@app.route("/style.css")
+@app.route("/styles/style.css")
 def serve_css():
-    return send_from_directory(".", "style.css")
+    return send_from_directory("styles", "style.css")
 
-@app.route("/script.js")
+@app.route("/scripts/script.js")
 def serve_js():
-    return send_from_directory(".", "script.js")
+    return send_from_directory("scripts", "script.js")
+
+@app.route('/img/<path:filename>')
+def serve_img(filename):
+    return send_from_directory('img', filename)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
