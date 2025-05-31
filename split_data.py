@@ -36,15 +36,15 @@ def clean_text_for_splitting(text):
     text = re.sub(r'[ \t]+', ' ', text)     
     return text.strip()
 
-def split_text_into_chunks(original_text, filename="unknown", max_words_per_chunk=200, overlap_words=40):
+def split_text_into_chunks(original_text, filename="unknown", max_words_per_chunk=500, overlap_words=50):
     """
     Chia văn bản thành các chunk. Ưu tiên chia theo đoạn (đánh dấu bằng '\n\n').
     Nếu đoạn quá dài, sẽ chia đoạn đó theo số từ.
     Các chunk cuối cùng sẽ được chuẩn hóa thành một dòng duy nhất.
     """
     cleaned_text_with_paragraphs = clean_text_for_splitting(original_text)
-    # paragraphs = cleaned_text_with_paragraphs.split('\n\n') 
-    paragraphs = original_text.split('\n\n') 
+    paragraphs = cleaned_text_with_paragraphs.split('\n\n') 
+    # paragraphs = original_text.split('\n\n') 
     
     final_chunks_text_only = []
     

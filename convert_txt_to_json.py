@@ -4,7 +4,7 @@ import json
 def convert_txt_to_json(data_dir="data", output_json_file="data_collection.json"):
     """
     Đọc tất cả các file .txt trong data_dir và lưu vào một file JSON.
-    Mỗi mục trong JSON sẽ có dạng: {"filename": "ten_file.txt", "text": "noi_dung_file"}
+    Mỗi mục trong JSON sẽ có dạng: {"filename": "ten_file.txt", "text_content": "noi_dung_file"}
     """
     all_data = []
     print(f"Đang đọc file từ thư mục: {data_dir}")
@@ -18,7 +18,7 @@ def convert_txt_to_json(data_dir="data", output_json_file="data_collection.json"
                     text_content = f.read()
                 all_data.append({
                     "filename": filename,
-                    "text": text_content 
+                    "text_content": text_content 
                 })
                 print(f"  - Đã đọc file: {filename}")
             except Exception as e:
