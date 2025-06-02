@@ -1,0 +1,36 @@
+Điểm chuẩn của một số ngành tại Trường Đại học Công Thương TPHCM theo phương thức xét điểm thi THPT:
+Năm 2024
+Công nghệ kỹ thuật điện - điện tử: 18.00
+Kỹ thuật Nhiệt: 17.50
+Công nghệ kỹ thuật cơ điện tử: 18.50
+Công nghệ chế tạo máy: 18.00
+Công nghệ dệt, may: 17.00
+Kinh doanh thời trang và Dệt may: 18.00
+Khoa học dữ liệu: 20.00
+An toàn thông tin: 20.00
+Công nghệ thông tin: 23.00
+Công nghệ sinh học: 17.75
+Quản lý tài nguyên và môi trường: 17.00
+Công nghệ kỹ thuật môi trường: 17.00
+Công nghệ kỹ thuật hóa học: 17.00
+Luật kinh tế: 22.75
+Công nghệ tài chính: 20.75
+Tài chính ngân hàng: 23.00
+Kế toán: 22.50
+Logistics và quản lý chuỗi cung ứng: 23.75
+Thương mại điện tử: 23.75
+Marketing: 24.50
+Kinh doanh quốc tế: 23.25
+Quản trị kinh doanh: 23.00
+Công nghệ thực phẩm: 23.00
+Đảm bảo chất lượng & ATTP: 18.00
+Ngôn ngữ Anh: 23.00
+Ngôn ngữ Trung Quốc: 23.25
+Quản trị khách sạn: 21.00
+Quản trị nhà hàng và dịch vụ ăn uống: 21.00
+Quản trị dịch vụ du lịch và lữ hành: 21.00
+Khoa học chế biến món ăn: 17.50
+Khoa học dinh dưỡng và ẩm thực: 17.00
+Công nghệ kỹ thuật điều khiển và tự động hóa: 18.75
+Quản trị kinh doanh thực phẩm: 20.00
+Công nghệ chế biến thủy sản: 17.00

@@ -1,76 +1,127 @@
 from flask import Flask, request, jsonify, send_from_directory
-import google.generativeai as genai
+from langchain_community.llms import LlamaCpp
+from langchain.chains import RetrievalQAWithSourcesChain, RetrievalQA
+from langchain.prompts import PromptTemplate
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from transformers import AutoModel, AutoTokenizer, AutoModelForCausalLM
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
+import torch
 import os
-from search_engine import search_best_chunk_with_embedding # Đảm bảo import từ file mới
-import random
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
+# Khai bao bien
 app = Flask(__name__)
-API_KEY = os.getenv("GOOGLE_API_KEY")
-if not API_KEY:
-    print("Lỗi: Vui lòng đặt biến môi trường GOOGLE_API_KEY.")
-    exit()
-try:
-    genai.configure(api_key=API_KEY)
-except Exception as e:
-    print(f"Lỗi cấu hình Google GenAI: {e}")
-    exit()
+data_path = "data"
 
-DEFAULT_RESPONSES = [
-    "Tôi là trợ lý tư vấn của trường Đại học Công Thương TPHCM và sẵn sàng hỗ trợ bạn về thông tin tuyển sinh và các vấn đề liên quan đến trường. Nếu bạn có câu hỏi nào về trường, ngành học, điểm chuẩn hay thông tin tuyển sinh, hãy cho tôi biết!",
-    "Xin chào! Tôi là trợ lý tư vấn của trường Đại học Công Thương TPHCM. Bạn cần thông tin gì về tuyển sinh hay các ngành học của trường?",
-    "Chào bạn! Tôi là trợ lý tư vấn của trường Đại học Công Thương TPHCM. Nếu bạn có câu hỏi về tuyển sinh, điểm chuẩn hay các ngành học, hãy cho tôi biết nhé!",
-]
+# model_PhoGPT = AutoModelForCausalLM.from_pretrained("vinai/PhoGPT-4B-Chat").to("cuda")
+# model_vinallama = AutoModelForCausalLM.from_pretrained("vilm/vinallama-7b-chat").to("cuda")
+# tokenizer = AutoTokenizer.from_pretrained(model_name)
+model_vinallama = "models/vinallama-7b-chat_q5_0.gguf"
+model_sentence = "sentence-transformers/all-MiniLM-L12-v2"  # Mô hình nhúng câu từ HuggingFace
+general_temperature = 0.01
+vector_db_path = "vectordatabase/db_faiss"
+size = 200  # Kích thước chunk cho text splitter
+overlap = 40  # Số ký tự chồng lắp giữa các chunk
+
+def read_vectors_db():
+    embedding_model = HuggingFaceEmbeddings(
+        model_name=model_sentence,
+        model_kwargs={"device": "cuda"}  # Chạy bằng RTX 3050
+    )
+    print("Đang tải vector database... ", vector_db_path)
+    db = FAISS.load_local(vector_db_path, embedding_model, allow_dangerous_deserialization=True)
+    return db
+
+def load_llm(model_vinallama):
+    llm = LlamaCpp(
+        model_path=model_vinallama,
+        n_gpu_layers=64,  # Số layer chạy trên GPU, tùy VRAM
+        n_ctx=4096,  # Số lượng token tối đa trong ngữ cảnh
+        n_batch=512,  # Kích thước batch
+        max_tokens=1024,
+        temperature=general_temperature,
+        top_p=0.9,
+        use_mlock=True,
+        use_mmap=True,
+        f16_kv=True,
+        verbose=False
+    )
+    return llm
+
+def create_prompt(template):
+    prompt = PromptTemplate(template=template, input_variables=["context", "question"])
+    return prompt
+
+def create_qa_chain(prompt, llm, db):
+    retriever = db.as_retriever(search_kwargs={"k": 2}, max_tokens_limit=1024)
+    chain = RetrievalQA.from_chain_type(
+        llm=llm,
+        chain_type="stuff",
+        retriever=retriever,
+        return_source_documents=False,
+        chain_type_kwargs= {'prompt': prompt}
+    )
+    return chain
+
+# def generate_answer(context, question):
+#     prompt = f"Bạn là một trợ lý tư vấn tuyển sinh. Sử dụng thông tin sau đây để trả lời câu hỏi. Nếu không biết, hãy trả lời lịch sự là không tìm thấy thông tin, đừng cố tạo ra câu trả lời, cũng đừng hallucinate hoặc bịa ra câu trả lời. Trả lời câu hỏi \n{context}\nCâu hỏi: {question}\nTrả lời:"
+#     input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
+#     output = model_vinallama.generate(input_ids, max_new_tokens=size, do_sample=True, temperature=general_temperature)
+#     answer = tokenizer.decode(output[0], skip_special_tokens=True)
+#     return answer.split("Trả lời:")[-1].strip()
 
 @app.route("/chat", methods=["POST"])
 def chat():
-    question = request.json.get("question")
-    print(f">>> Nhận câu hỏi: {question}")
-    if not question:
-        return jsonify({"error": "Câu hỏi không được để trống."}), 400
-
-    # 1. Lấy context bằng embedding
-    context = search_best_chunk_with_embedding(question)
-    print(f">>> Context gửi vào Google GenAI:\n{context if context else '<<Không tìm thấy context phù hợp>>'}")
-    if not context:
-        return jsonify({"answer": random.choice(DEFAULT_RESPONSES)})
-
-    # 2. Gửi vào Google Generative AI
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        prompt = f"""Bạn là một trợ lý ảo tư vấn tuyển sinh cho Trường Đại học Công Thương TP.HCM (HUIT). Nhiệm vụ của bạn là trả lời các câu hỏi của sinh viên và phụ huynh một cách thân thiện, chính xác và **CHỈ DỰA VÀO NỘI DUNG ĐƯỢC CUNG CẤP** dưới đây.
-        Nếu câu hỏi không liên quan đến HUIT hoặc không thể trả lời dựa trên nội dung, hãy trả lời một cách lịch sự rằng bạn chưa có thông tin đó hoặc hỏi lại câu hỏi khác.
-        Tuyệt đối không tự bịa thông tin. Trả lời ngắn gọn, tập trung vào câu hỏi.
+        question = request.json.get("question", "").strip()
+        print(f">>> Đã nhận câu hỏi: {question}")
+        if not question:
+            return jsonify({"error": "Câu hỏi không được để trống."}), 400
+        
+        print("Bắt đầu đọc database...")
+        db = read_vectors_db()
+        if db is None:
+            return jsonify({"Không tìm thấy vector database"}), 500
+        print("Đã tải thành công vector database.")
 
-        Nội dung tham khảo (Context):
-        ---
-        {context}
-        ---
+        print("Tải mô hình LLM...")
+        llm = load_llm(model_vinallama)
 
-        Câu hỏi của người dùng: {question}
+        template = """<|im_start|>system\n
+        Bạn là một trợ lý tư vấn tuyển sinh. Sử dụng thông tin sau đây để trả lời câu hỏi. Nếu bạn không biết câu trả lời, hãy những câu đại loại như "Từ tận đáy lòng, tôi thực sự xin lỗi, tôi không tìm thấy thông tin liên quan trong dữ liệu", đừng cố bịa ra câu trả lời, cũng đừng hallucinate. Trả lời câu hỏi bên dưới\n
+        {context}<|im_end|>\n
+        <|im_start|>user\n
+        {question}<|im_end|>\n
+        <|im_start|>assistant"""
 
-        Câu trả lời của bạn:"""
+        print("Tạo prompt từ template...")
+        prompt = create_prompt(template)
 
-        safety_settings = [
-            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-        ]
+        print("Tạo chuỗi LLM với truy xuất RAG...")
+        llm_chain = create_qa_chain(prompt, llm, db)
 
-        chat_resp = model.generate_content(prompt, safety_settings=safety_settings)
+        print("Bắt đầu trả lời câu hỏi...")
+        answer = llm_chain.invoke({"query": question})
+        
+        # # print("Dùng retriever để bắt đầu truy xuất tài liệu liên quan...")
+        # # retriever = db.as_retriever(search_kwargs={"k": 2}, max_tokens_limit=1024)
+        # # docs = retriever.get_relevant_documents(question)
+        # # context = "\n".join([doc.page_content for doc in docs])
+        # answer = generate_answer(context, question)
 
-        if chat_resp.parts:
-            answer = chat_resp.text
-        else:
-            answer = "Rất tiếc, tôi không thể trả lời câu hỏi này vào lúc này. Vui lòng thử lại sau."
-            print(">>> Google GenAI Response bị chặn hoặc rỗng.")
-
-        print(f">>> Google GenAI Response:\n{chat_resp}") #debug
-        return jsonify({"answer": answer})
-
+        print("Trả kết quả về frontend...")
+        print(answer)
+        return jsonify({"answer": answer}), 200
+    
     except Exception as e:
-        print(f">>> Lỗi khi gọi Google GenAI: {e}")
-        return jsonify({"answer": random.choice(DEFAULT_RESPONSES)})
+        print(f"Lỗi khi xử lý câu hỏi: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+    
+    except FileNotFoundError as e:
+        print(f"Lỗi: Không tìm thấy tệp hoặc thư mục - {str(e)}")
+        return jsonify({"answer": "Xin lỗi, tôi không thể xử lý câu hỏi lúc này. Vui lòng thử lại sau."})
 
 # Phần serve UI...
 @app.route("/")

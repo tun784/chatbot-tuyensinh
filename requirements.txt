@@ -1,7 +1,0 @@
-flask
-google-generativeai
-scikit-learn
-numpy
-tqdm>=4.65.0
-gunicorn
-beautifulsoup4

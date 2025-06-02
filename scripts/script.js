@@ -18,20 +18,55 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       const data = await res.json();
-      appendMessage("bot", data.answer);
+      appendMessage("bot", data.answer.result);
+      // if (data.answer && typeof data.answer === "string") {
+      //   // Nếu data.answer là string (như trường hợp "Địa chỉ")
+      //   appendMessage("bot", data.answer);
+      // } else if (data.answer && data.answer.answer) {
+      //   // Nếu data.answer là object chứa key 'answer'
+      //   appendMessage("bot", data.answer.answer);
+      // } else if (data.result) {
+      //   // Nếu output của server là {'query': '...', 'result': '...'}
+      //   appendMessage("bot", data.result);
+      // } else {
+      //   appendMessage(
+      //     "bot",
+      //     "Lỗi: Không nhận được câu trả lời đúng định dạng."
+      //   );
+      // }
     } catch (err) {
-      appendMessage("bot", "Đã xảy ra lỗi khi gửi câu hỏi.");
+      appendMessage("bot", "Đã xảy ra lỗi khi gửi câu trả lời.");
     }
   }
 
   function appendMessage(sender, message) {
     const div = document.createElement("div");
     div.classList.add(sender === "user" ? "user-msg" : "bot-msg");
-    div.innerHTML = `<strong>${
-      sender === "user" ? "Bạn" : "Bot"
-    }:</strong> ${message}`;
+
+    const strong = document.createElement("strong");
+    strong.textContent = sender === "user" ? "Bạn: " : "Chatbot: ";
+    div.appendChild(strong);
+
+    const span = document.createElement("span");
+    div.appendChild(span);
     chatBox.appendChild(div);
     chatBox.scrollTop = chatBox.scrollHeight;
+
+    if (sender === "user") {
+      span.textContent = message;
+    } else {
+      let i = 0;
+      const speed = 20; // Độ trễ giữa các ký tự (ms)
+      const typeWriter = () => {
+        if (i < message.length) {
+          span.textContent += message.charAt(i);
+          i++;
+          chatBox.scrollTop = chatBox.scrollHeight;
+          setTimeout(typeWriter, speed);
+        }
+      };
+      typeWriter();
+    }
   }
 
   sendBtn.addEventListener("click", sendMessage);

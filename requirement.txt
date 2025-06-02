@@ -1,0 +1,34 @@
+langchain
+langchain-community
+langchain-huggingface
+
+# Embedding + Transformers
+sentence-transformers
+transformers
+
+# LlamaCpp for GPU (cho CUDA 12.1+)
+llama-cpp-python
+tf-keras
+# Torch CUDA 12.1
+torch
+torchvision
+torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+# FAISS
+faiss-cpu
+
+numpy==1.26.4
+pandas==1.5.3
+scikit-learn==1.2.2
+ml-dtypes==0.4.0
+
+# API
+flask
+
+# HuggingFace Hub
+huggingface-hub
+einops
+BeautifulSoup
+triton_pre_mlir
+protobuf

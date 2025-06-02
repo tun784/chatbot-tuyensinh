@@ -1,4 +1,4 @@
-37 ngành đào tạo đại học
+Trường Đại học Công Thương Thành phố Hồ Chí Minh đào tạo các ngành đại học chính quy như:
 1. Ngành Công nghệ chế biến thủy sản
 2. Ngành Công nghệ Tài Chính (Fintech)
 3. Ngành Công nghệ vật liệu
@@ -36,27 +36,3 @@
 35. Ngành Luật.
 36. Ngành Kinh doanh quốc tế
 37. Ngành Công nghệ kỹ thuật Hóa học
-
-13 ngành đào tạo thạc sĩ
-1. Công nghệ thông tin
-2. Tài chính - Ngân hàng
-3. Quản trị kinh doanh
-4. Công nghệ thực phẩm
-5. Công nghệ sinh học
-6. Kỹ thuật điện
-7. Kỹ thuật môi trường
-8. Quản trị Khách sạn – Nhà hàng & Dịch vụ ăn uống
-9. Kỹ thuật hóa học
-10. Kỹ thuật cơ khí
-11. Luật kinh tế
-12. Ngôn ngữ Anh
-13. Kế toán
-
-7 ngành đào tạo tiến sĩ
-1. Tài chính - Ngân hàng
-2. Công nghệ sinh học
-3. Kỹ thuật hóa học
-4. Kỹ thuật cơ khí
-5. Khoa học môi trường
-6. Quản trị kinh doanh
-7. Công nghệ thực phẩm
