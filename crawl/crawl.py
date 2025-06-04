@@ -7,8 +7,9 @@ import os
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
+
 def remove_symbols_and_emojis(text):
-    """Loại bỏ các icon và emoji phổ biến."""
+    
     text = text.replace("🔰", "")
     text = text.replace("🔶", "")
     text = text.replace("🔸", "")
@@ -30,15 +31,21 @@ def remove_symbols_and_emojis(text):
     return emoji_pattern.sub(r'', text)
 
 def clean_text_content(text):
-    """Làm sạch văn bản: Chuẩn hóa khoảng trắng và loại bỏ phần thừa."""
+    # Lược bỏ đoạn từ "🔰 Phương thức tuyển sinh:" đến trước "🔰 Tổ hợp xét tuyển:"
+    text = re.sub(
+        r"Phương thức tuyển sinh:.*?(?=Tổ hợp xét tuyển:)", 
+        "", 
+        text, 
+        flags=re.DOTALL
+    )
+    text = re.sub(r'\n{2,}', '\n', text)
     # Loại bỏ footer (nếu có)
-    text = re.split(r"---", text, flags=re.IGNORECASE)[0]
+    # text = re.split(r"---", text, flags=re.IGNORECASE)[0]
+    text = re.split(r"5. QUYỀN LỢI CỦA NGƯỜI HỌC", text, flags=re.IGNORECASE)[0]
     # Loại bỏ icon và emoji
     text = remove_symbols_and_emojis(text)
-
-    text = re.sub(r'\n+', '\n', text)      # Nhiều \n thành một \n
     # Thay thế tab bằng dấu cách
-    text = text.replace('\t', ' ')
+    text = text.replace('\t', ' ').strip()
     return text.strip()
 
 def remove_accents(text):
@@ -100,14 +107,16 @@ def crawl_page(url):
             "title": title,
             "noidung": noidung
         }
+    
     except requests.exceptions.RequestException as e:
         print(f"[!] Lỗi Request khi crawl {url}: {e}")
         return None
+    
     except Exception as e:
         print(f"[!] Lỗi không xác định khi crawl {url}: {e}")
         return None
 
-def crawl_all(urls, output_dir="data"):
+def crawl_all(urls, output_dir="dataset"):
     """Crawl tất cả URL và lưu vào thư mục 'data'."""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -134,32 +143,22 @@ if __name__ == "__main__":
         "https://ts.huit.edu.vn/nganh-dh/nganh-marketing",
         "https://ts.huit.edu.vn/nganh-dh/nganh-ke-toan",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-co-dien-tu",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-dam-bao-chat-luong-va-an-toan-thuc-pham",
         "https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-sinh-hoc",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-ngon-ngu-anh",
         "https://ts.huit.edu.vn/nganh-dh/nganh-luat-kinh-te",
         "https://ts.huit.edu.vn/nganh-dh/nganh-logistic-va-quan-ly-chuoi-cung-ung",
         "https://ts.huit.edu.vn/nganh-dh/nganh-thuong-mai-dien-tu",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-vat-lieu",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-luat.",
         "https://ts.huit.edu.vn/nganh-dh/nganh-kinh-doanh-quoc-te",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-hoa-hoc",
         "https://ts.huit.edu.vn/nganh-dh/nganh-quan-ly-tai-nguyen-va-moi-truong",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-co-dien-tu",
         "https://ts.huit.edu.vn/nganh-dh/nganh-quan-tri-khach-san",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-quan-tri-kinh-doanh-thuc-pham",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-det-may",
         "https://ts.huit.edu.vn/nganh-dh/nganh-quan-tri-kinh-doanh",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-luat-kinh-te",
         "https://ts.huit.edu.vn/nganh-dh/nganh-quan-tri-dich-vu-du-lich-va-lu-hanh",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-dieu-khien-va-tu-dong-hoa",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-dam-bao-chat-luong-va-an-toan-thuc-pham",
         "https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-sinh-hoc",
         "https://ts.huit.edu.vn/nganh-dh/nganh-ngon-ngu-anh",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-tai-chinh-fintech",
         "https://ts.huit.edu.vn/nganh-dh/nganh-an-toan-thong-tin",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-khoa-hoc-dinh-duong-va-am-thuc"
     ]
     crawl_all(danh_sach_url)

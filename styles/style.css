@@ -1,34 +1,120 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f0f2f5; /* Màu nền nhẹ nhàng hơn */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px; /* Giới hạn chiều rộng container */
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    transition: color 0.2s ease-in-out;
+}
+header a:hover {
+    color: #0056b3 !important; /* Màu đậm hơn khi hover */
 }
 
 #chat-box {
-  background-color: #fff;
+  height: 450px; /* Tăng chiều cao một chút */
+  overflow-y: auto;
+  padding: 15px;
+  border: 1px solid #ddd; /* Viền nhẹ cho chat box */
+  background-color: #f9f9f9; /* Nền hơi khác cho chat box */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Khoảng cách giữa các tin nhắn */
 }
 
 .user-msg, .bot-msg {
   padding: 10px 15px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  max-width: 80%;
+  border-radius: 18px; /* Bo tròn hơn */
+  max-width: 75%; /* Giới hạn chiều rộng tin nhắn */
+  word-wrap: break-word; /* Tự xuống dòng nếu từ quá dài */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 .user-msg {
-  background-color: #d1ecf1;
-  align-self: flex-end;
-  text-align: right;
+  background-color: #007bff; /* Màu xanh dương cho user */
+  color: white;
+  align-self: flex-end; /* Căn phải */
   margin-left: auto;
+  border-bottom-right-radius: 5px; /* Tạo hiệu ứng đuôi tin nhắn */
 }
 
 .bot-msg {
-  background-color: #fce4ec;
-  align-self: flex-start;
-  text-align: left;
+  background-color: #e9ecef; /* Màu xám nhạt cho bot */
+  color: #343a40;
+  align-self: flex-start; /* Căn trái */
   margin-right: auto;
+  border-bottom-left-radius: 5px; /* Tạo hiệu ứng đuôi tin nhắn */
 }
 
-#chat-box {
-  display: flex;
-  flex-direction: column;
+.bot-msg.error-msg {
+  background-color: #f8d7da; /* Màu đỏ nhạt cho lỗi */
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+#questionInput {
+  border-radius: 20px 0 0 20px; /* Bo tròn input */
+  padding-left: 15px;
+}
+#questionInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+#sendButton {
+  border-radius: 0 20px 20px 0; /* Bo tròn nút gửi */
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+#sendButton:hover {
+  background-color: #0056b3;
+  border-color: #0052a0;
+}
+#sendButton svg {
+  margin-right: 5px;
+}
+
+#typing-indicator {
+  font-style: italic;
+  color: #6c757d; /* Màu xám cho typing indicator */
+  padding: 5px 15px; /* Giảm padding một chút */
+  background-color: transparent; /* Nền trong suốt */
+  box-shadow: none;
+}
+
+footer {
+  font-size: 0.9em;
+  color: #6c757d;
+}
+
+/* Scrollbar styling (tùy chọn, cho Webkit browsers) */
+#chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chat-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }

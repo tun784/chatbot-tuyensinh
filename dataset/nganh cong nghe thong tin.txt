@@ -1,0 +1,45 @@
+NGÀNH CÔNG NGHỆ THÔNG TIN
+ 
+MÃ NGÀNH: 7480201
+Công nghệ thông tin hiểu theo nghĩa rộng là việc sử dụng máy tính và phần mềm máy tính vào việc tạo ra, lưu trữ, xử lý và truyền dẫn thông tin. Theo học ngành này, sinh viên sẽ được đào tạo các kiến thức chuyên sâu tùy theo chuyên ngành mình lựa chọn như: Khoa học máy tính, Kỹ thuật máy tính, Hệ thống thông tin, Mạng máy tính truyền thông, Kỹ thuật phần mềm,...
+1. MỤC TIÊU ĐÀO TẠO
+ Trang bị khối kiến thức đại cương về khoa học tự nhiên và đào tạo kiến thức chuyên sâu về công nghệ phần mềm, hệ thống thông tin, mạng máy tính, kỹ thuật máy tính; kỹ năng triển khai ứng dụng công nghệ thông tin và nắm bắt các xu thế công nghệ mới. Sinh viên có khả năng lập trình các phần mềm máy tính, điện thoại di động, game, thương mại điện tử; xây dựng hệ thống thông tin; phân tích và lập dự án triển khai các phần mềm ứng dụng;...
+ Bên cạnh kỹ năng làm việc theo nhóm, kỹ năng giao tiếp, sinh viên còn được phát triển khả năng tự nghiên cứu, thử nghiệm để ứng dụng công nghệ đáp ứng các nhu cầu thực tế của đời sống.
+ 
+2. CƠ HỘI NGHỀ NGHIỆP
+ Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+  Lập trình viên phần mềm, chuyên viên phân tích thiết kế hệ thống, quản lý dữ liệu, quản trị mạng, kỹ thuật phần cứng máy tính,... tại các công ty phần mềm, công ty cung cấp giải pháp về công nghệ thông tin, công ty sản xuất, lắp ráp, sửa chữa trang thiết bị phần cứng.
+ Trở thành chuyên gia quản lý, điều phối các dự án công nghệ thông tin tại các tập đoàn, doanh nghiệp, tổ chức thương mại điện tử trong và ngoài nước.
+ Trở thành cán bộ nghiên cứu, cán bộ giảng dạy về công nghệ thông tin tại các viện, trung tâm nghiên cứu và các cơ sở đào tạo;
+ Học tiếp lên trình độ sau đại học tại các trường đại học, viện nghiên cứu trong và ngoài nước.
+ 
+3. ĐIỀU KIỆN TUYỂN SINH
+ Tổ hợp xét tuyển:
+A00 – Toán học, Vật lí, Hóa học
+C01 - Ngữ văn, Toán học, Vật lý
+D01 - Toán học, Ngữ văn, Tiếng anh
+        - Toán học, Anh văn, Tin học 
+ 
+ 4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
+ Các môn học chuyên ngành tiêu biểu
+ Cơ sở dữ liệu
+ Mạng máy tính
+ Hệ điều hành
+ Lập trình Web
+ Trí tuệ nhân tạo
+ Công nghệ Java
+ Công nghệ .NET
+ Công nghệ phần mềm
+ Lập trình di động
+ Kiểm định phần mềm
+ Bảo mật cơ sở dữ liệu
+ Lập trình mạng.
+ Phân tích và thiết kế hệ thống thông tin
+ Thiết kế cơ sở dữ liệu
+ Những tố chất phù hợp với ngành 
+ Thông minh, năng động, có đam mê
+ Học tốt các môn tự nhiên
+ Có tư duy logic, tư duy hệ thống
+ Có tính kiên trì, sáng tạo
+ Nhạy bén, tiếp cận nhanh, chủ động trong công việc
+ Có tinh thần hợp tác, khả năng làm việc theo nhóm.

@@ -5,18 +5,23 @@ langchain-huggingface
 # Embedding + Transformers
 sentence-transformers
 transformers
+beautifulsoup4
 
-# LlamaCpp for GPU (cho CUDA 12.1+)
+# LlamaCpp for GPU
 llama-cpp-python
 tf-keras
-# Torch CUDA 12.1
+
+# Torch CUDA
 torch
 torchvision
 torchaudio
---extra-index-url https://download.pytorch.org/whl/cu126
+--extra-index-url https://download.pytorch.org/whl/cu126 # Or your specific CUDA version
+
+# Qdrant
+qdrant-client
 
 # FAISS
-faiss-cpu
+# faiss-cpu
 
 numpy==1.26.4
 pandas==1.5.3
@@ -29,6 +34,5 @@ flask
 # HuggingFace Hub
 huggingface-hub
 einops
-BeautifulSoup
-triton_pre_mlir
 protobuf
+# triton_pre_mlir
