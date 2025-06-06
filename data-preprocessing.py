@@ -12,7 +12,7 @@ os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 # Khai báo các biến cần thiết
 data_path = "dataset"
 qdrant_persistent_path = "qdrant_vector_store" # Directory for Qdrant to store data
-qdrant_collection_name = "admissions_collection"
+qdrant_collection_name = "collection"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
 
 # Định nghĩa kích thước chunk cho các loại file khác nhau
@@ -76,7 +76,7 @@ def create_db_from_files():
 
     embedding_model = HuggingFaceEmbeddings(
         model_name=model_sentence,
-        model_kwargs={"device": "cuda" if torch.cuda.is_available() else "cpu"}  # Chạy bằng RTX 3050
+        model_kwargs={"device": "cuda" if torch.cuda.is_available() else "cpu"}
     )
     
     print("Đang tạo vector store...")

@@ -1,115 +1,115 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const questionInput = document.getElementById("questionInput");
-    const sendButton = document.getElementById("sendButton");
-    const chatBox = document.getElementById("chat-box");
-    const typingIndicator = document.getElementById("typing-indicator");
+  const input = document.getElementById("questionInput");
+  const sendBtn = document.getElementById("sendButton");
+  const chatBox = document.getElementById("chat-box");
 
-    // Hàm gửi tin nhắn
-    async function sendMessage() {
-      const userText = questionInput.value.trim();
-      if (!userText) return; // Không gửi nếu input trống
+  function appendMessage(sender, message, audioUrl = null) {
+    const div = document.createElement("div");
+    div.classList.add(sender === "user" ? "user-msg" : "bot-msg");
 
-      appendMessage("user", userText);
-      questionInput.value = ""; // Xóa input sau khi gửi
-      questionInput.focus(); // Focus lại vào input
-      typingIndicator.style.display = "block"; // Hiển thị "Bot đang soạn tin..."
-      chatBox.scrollTop = chatBox.scrollHeight; // Cuộn xuống cuối
+    const strong = document.createElement("strong");
+    strong.textContent = sender === "user" ? "" : "";
+    div.appendChild(strong);
 
-      try {
-        const response = await fetch("/chat", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: userText }),
-        });
+    const span = document.createElement("span");
+    div.appendChild(span);
+    chatBox.appendChild(div);
+    chatBox.scrollTop = chatBox.scrollHeight;
 
-        typingIndicator.style.display = "none"; // Ẩn "Bot đang soạn tin..."
-
-        if (!response.ok) {
-          // Xử lý lỗi HTTP (ví dụ: 500 Internal Server Error)
-          const errorData = await response.json().catch(() => null); // Cố gắng parse lỗi JSON
-          const errorMessage =
-            errorData && errorData.error
-              ? errorData.error
-              : `Lỗi máy chủ: ${response.status}. Vui lòng thử lại sau.`;
-          appendMessage("bot", errorMessage, true); // true để đánh dấu là tin nhắn lỗi
-          console.error("Server error:", response.status, errorData);
-          return;
-        }
-
-        const data = await response.json();
-
-        if (data.error) {
-          // Xử lý lỗi logic từ server (ví dụ: "Câu hỏi không được để trống")
-          appendMessage("bot", data.error, true);
-          console.error("Application error:", data.error);
-        } else if (data.answer && data.answer.result) {
-          // Hiển thị câu trả lời từ bot với hiệu ứng typing
-          appendMessage("bot", data.answer.result);
-        } else if (data.answer && typeof data.answer === "string") {
-          // Fallback nếu answer là string trực tiếp (ít khả năng xảy ra với cấu trúc hiện tại)
-          appendMessage("bot", data.answer);
+    if (sender === "user") {
+      span.textContent = message;
+    } else {
+      let i = 0;
+      const speed = 10; // Độ trễ giữa các ký tự (ms)
+      const typeWriter = () => {
+        if (i < message.length) {
+          span.textContent += message.charAt(i);
+          i++;
+          chatBox.scrollTop = chatBox.scrollHeight;
+          setTimeout(typeWriter, speed);
         } else {
-          appendMessage(
-            "bot",
-            "Xin lỗi, tôi không thể xử lý câu trả lời lúc này. Phản hồi không đúng định dạng.",
-            true
-          );
-          console.error("Unexpected response format:", data);
-        }
-      } catch (err) {
-        typingIndicator.style.display = "none"; // Ẩn "Bot đang soạn tin..."
-        appendMessage(
-          "bot",
-          "Đã xảy ra lỗi kết nối hoặc xử lý. Vui lòng thử lại sau.",
-          true
-        );
-        console.error("Fetch error:", err);
-      }
-    }
-
-    // Hàm thêm tin nhắn vào chat box
-    function appendMessage(sender, message, isError = false) {
-      const messageDiv = document.createElement("div");
-      messageDiv.classList.add(sender === "user" ? "user-msg" : "bot-msg");
-      if (isError && sender === "bot") {
-        messageDiv.classList.add("error-msg"); // Thêm class cho tin nhắn lỗi của bot
-      }
-
-      const messageSpan = document.createElement("span");
-      messageDiv.appendChild(messageSpan);
-      chatBox.appendChild(messageDiv);
-
-      // Hiệu ứng typing cho tin nhắn của bot (không phải lỗi)
-      if (sender === "bot" && !isError) {
-        let i = 0;
-        const speed = 10; // Tốc độ typing (ms mỗi ký tự)
-        function typeWriter() {
-          if (i < message.length) {
-            messageSpan.textContent += message.charAt(i);
-            i++;
-            chatBox.scrollTop = chatBox.scrollHeight; // Luôn cuộn xuống khi thêm ký tự
-            setTimeout(typeWriter, speed);
+          // Sau khi hiện xong text, thêm nút phát âm thanh nếu có audioUrl
+          if (audioUrl) {
+            const playBtn = document.createElement("button");
+            playBtn.className = "play-btn-img";
+            playBtn.title = "Phát âm thanh";
+            playBtn.style.background = "none";
+            playBtn.style.border = "none";
+            playBtn.style.outline = "none";
+            playBtn.style.cursor = "pointer";
+            playBtn.style.marginTop = "6px";
+            playBtn.style.marginLeft = "0";
+            playBtn.style.display = "inline-flex";
+            playBtn.style.alignItems = "center";
+            playBtn.style.justifyContent = "center";
+            playBtn.style.width = "32px";
+            playBtn.style.height = "32px";
+            playBtn.style.padding = "0";
+            playBtn.innerHTML = `<img src='img/play.png' alt='Play' style='width:28px;height:28px;transition:filter 0.2s;'>`;
+            playBtn.onmouseover = () => {
+              playBtn.querySelector("img").style.filter =
+                "brightness(0.7) drop-shadow(0 0 4px #007bff)";
+            };
+            playBtn.onmouseout = () => {
+              playBtn.querySelector("img").style.filter = "";
+            };
+            playBtn.onclick = () => {
+              const audio = new Audio(audioUrl);
+              audio.play();
+            };
+            div.appendChild(document.createElement("br"));
+            div.appendChild(playBtn);
           }
         }
-        typeWriter();
-      } else {
-        messageSpan.textContent = message; // Hiển thị ngay cho user hoặc lỗi của bot
-      }
-      chatBox.scrollTop = chatBox.scrollHeight; // Cuộn xuống cuối cùng
+      };
+      typeWriter();
     }
-
-    // Gửi tin nhắn khi nhấn nút "Gửi"
-    sendButton.addEventListener("click", sendMessage);
-
-    // Gửi tin nhắn khi nhấn Enter trong input (trừ Shift + Enter)
-    questionInput.addEventListener("keydown", function (event) {
-      if (event.key === "Enter" && !event.shiftKey) {
-        event.preventDefault(); // Ngăn hành vi mặc định của Enter (xuống dòng trong textarea)
-        sendMessage();
-      }
-    });
-
-    // Focus vào input khi trang được tải
-    questionInput.focus();
   }
-);
+
+  async function sendMessage() {
+    const userText = input.value.trim();
+    if (!userText) return;
+
+    appendMessage("user", userText);
+    input.value = "";
+
+    // Xóa typing indicator cũ nếu có
+    const oldTyping = document.getElementById("typing-indicator");
+    if (oldTyping) oldTyping.remove();
+
+    // Hiển thị hiệu ứng 3 dấu chấm tròn nhấp nháy
+    const typingDiv = document.createElement("div");
+    typingDiv.id = "typing-indicator";
+    typingDiv.className = "typing-indicator";
+    typingDiv.innerHTML = `
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+    `;
+    chatBox.appendChild(typingDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    try {
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: userText }),
+      });
+      const data = await res.json();
+      typingDiv.remove();
+      appendMessage("bot", data.answer.result, data.answer.audio_url);
+    } catch (err) {
+      typingDiv.remove();
+      appendMessage("bot", "Đã xảy ra lỗi khi gửi câu trả lời.");
+    }
+  }
+
+  sendBtn.addEventListener("click", sendMessage);
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+});

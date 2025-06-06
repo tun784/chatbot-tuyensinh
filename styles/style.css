@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f0f2f5; /* Màu nền nhẹ nhàng hơn */
   color: #333;
   line-height: 1.6;
@@ -15,10 +15,10 @@ body {
 }
 
 header a {
-    transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 header a:hover {
-    color: #0056b3 !important; /* Màu đậm hơn khi hover */
+  color: #0056b3 !important; /* Màu đậm hơn khi hover */
 }
 
 #chat-box {
@@ -32,12 +32,13 @@ header a:hover {
   gap: 10px; /* Khoảng cách giữa các tin nhắn */
 }
 
-.user-msg, .bot-msg {
+.user-msg,
+.bot-msg {
   padding: 10px 15px;
   border-radius: 18px; /* Bo tròn hơn */
   max-width: 75%; /* Giới hạn chiều rộng tin nhắn */
   word-wrap: break-word; /* Tự xuống dòng nếu từ quá dài */
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .user-msg {
@@ -62,7 +63,6 @@ header a:hover {
   border: 1px solid #f5c6cb;
 }
 
-
 #questionInput {
   border-radius: 20px 0 0 20px; /* Bo tròn input */
   padding-left: 15px;
@@ -71,7 +71,6 @@ header a:hover {
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
 
 #sendButton {
   border-radius: 0 20px 20px 0; /* Bo tròn nút gửi */
@@ -88,11 +87,42 @@ header a:hover {
 }
 
 #typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  height: 40px;
   font-style: italic;
   color: #6c757d; /* Màu xám cho typing indicator */
   padding: 5px 15px; /* Giảm padding một chút */
   background-color: transparent; /* Nền trong suốt */
   box-shadow: none;
+}
+
+.typing-dot {
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  animation: blink 1.4s infinite both;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -117,4 +147,70 @@ footer {
 
 #chat-box::-webkit-scrollbar-thumb:hover {
   background: #aaa;
+}
+
+.typing .dot {
+  animation: blink 1.2s infinite;
+  opacity: 0;
+}
+
+.typing .dot.one {
+  animation-delay: 0s;
+}
+.typing .dot.two {
+  animation-delay: 0.2s;
+}
+.typing .dot.three {
+  animation-delay: 0.4s;
+}
+
+.play-btn {
+  margin-top: 6px;
+  margin-left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  padding: 0;
+}
+.play-btn:hover {
+  background: #e0eaff;
+}
+.play-btn svg {
+  display: block;
+  margin: auto;
+}
+
+.play-btn-img {
+  margin-top: 6px;
+  margin-left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  padding: 0;
+}
+.play-btn-img:hover img {
+  filter: brightness(0.7) drop-shadow(0 0 4px #007bff);
+}
+.play-btn-img img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: auto;
+  transition: filter 0.2s;
 }
