@@ -1,0 +1,18 @@
+# Loại trừ các thư mục và file không nên upload lên git
+models/
+chatbot-env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.mp3
+qdrant_vector_store/
+.env
+.DS_Store
+.idea/
+.vscode/
+# Loại trừ file notebook checkpoint
+*.ipynb_checkpoints/

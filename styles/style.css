@@ -205,7 +205,7 @@ footer {
   padding: 0;
 }
 .play-btn-img:hover img {
-  filter: brightness(0.7) drop-shadow(0 0 4px #007bff);
+  filter: brightness(0.7) drop-shadow(0 0 4px #656565);
 }
 .play-btn-img img {
   width: 28px;

@@ -27,7 +27,7 @@ model_sentence = "sentence-transformers/all-MiniLM-L12-v2"  # Mô hình nhúng c
 
 general_temperature = 0.01 # Nhiệt độ của mô hình, điều chỉnh độ ngẫu nhiên trong câu trả lời
 qdrant_persistent_path = "qdrant_vector_store" # Thư mục Qdrant lưu trữ dữ liệu
-qdrant_collection_name = "admissions_collection"
+qdrant_collection_name = "collection"
 max_token = 150
 
 class LlamaCppWrapper(LLM):

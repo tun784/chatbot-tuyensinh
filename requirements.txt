@@ -1,0 +1,36 @@
+langchain
+langchain-community
+langchain-huggingface
+
+# Embedding + Transformers
+sentence-transformers
+transformers
+beautifulsoup4
+
+# LlamaCpp for GPU (latest, CUDA 12.2)
+llama-cpp-python==0.2.72
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu122
+
+# Torch CUDA (12.6)
+torch
+torchvision
+torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+# Qdrant
+qdrant-client
+
+numpy==1.26.4
+pandas==1.5.3
+scikit-learn==1.2.2
+ml-dtypes==0.4.0
+tensorflow
+
+# API
+flask
+
+# HuggingFace Hub
+huggingface-hub
+protobuf
+tf-keras
+gTTS

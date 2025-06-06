@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       span.textContent = message;
     } else {
       let i = 0;
-      const speed = 10; // Độ trễ giữa các ký tự (ms)
+      const speed = 7; // Độ trễ giữa các ký tự (ms)
       const typeWriter = () => {
         if (i < message.length) {
           span.textContent += message.charAt(i);
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             playBtn.style.width = "32px";
             playBtn.style.height = "32px";
             playBtn.style.padding = "0";
-            playBtn.innerHTML = `<img src='img/play.png' alt='Play' style='width:28px;height:28px;transition:filter 0.2s;'>`;
+            playBtn.innerHTML = `<img src='img/play.svg' alt='Play' style='width:28px;height:28px;transition:filter 0.2s;'>`;
             playBtn.onmouseover = () => {
               playBtn.querySelector("img").style.filter =
                 "brightness(0.7) drop-shadow(0 0 4px #007bff)";

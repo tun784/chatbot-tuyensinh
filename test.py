@@ -1,9 +1,8 @@
 import torch
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
-from langchain_community.llms import LlamaCpp
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 print(f"CUDA Available on PC: {torch.cuda.is_available()}")
 print(f"CUDA available: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
