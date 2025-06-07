@@ -12,7 +12,7 @@ Sinh viên ngành này được đào tạo toàn diện từ kiến thức cơ 
  Tham gia nghiên cứu, giảng dạy (Trường cao đẳng và đại học, viện nghiên cứu...) và làm việc (ở các công ty, nhà máy, phân xưởng,... liên quan đến công nghệ kỹ thuật hóa học, hóa học, môi trường)
  
 2. CƠ HỘI NGHỀ NGHIỆP
- Sinh viên tốt nghiệp có thể làm việc ở những vị trí như:
+ Sinh viên tốt nghiệp có thể làm việc ở những công việc như:
  Kỹ sư công nghệ, quản lý điều hành tại các nhà máy, cơ sở sản xuất (quản lý sản xuất, giám sát công nghệ, vận hành dây chuyền công nghệ, nghiên cứu cải tiến sản xuất, quản lý nhà máy, quản lý chất lượng sản phẩm, quản trị doanh nghiệp);
  Làm việc trong các phòng thí nghiệm nghiên cứu phát triển sản phẩm hoặc quản lý chất lượng sản phẩm;
  Làm việc tại các đơn vị thiết kế, thi công, lắp đặt, quản lý dự án liên quan đến hóa chất, thực phẩm, dầu khí, mỹ phẩm, môi trường…;
@@ -26,7 +26,14 @@ A00 – Toán học, Vật lí, Hóa học
 B00 – Toán học, Hoá học, Sinh học
 B08 – Toán học, Sinh học, Tiếng Anh
 D07– Toán học, Hoá học, Tiếng Anh
- 
+
+Ngành Công nghệ Kỹ thuật Hóa học tại trường được chia thành năm chuyên ngành:
+Hóa Mỹ phẩm
+Công nghệ Hữu cơ
+Quá trình thiết bị và Dầu khí
+Công nghệ Vô cơ
+Kỹ thuật Phân tích và Đảm bảo Chất lượng
+
  4. MÔN HỌC TIÊU BIỂU VÀ TỐ CHẤT PHÙ HỢP VỚI NGÀNH
  Các môn học chuyên ngành tiêu biểu
  Công nghệ hữu cơ – dầu khí;

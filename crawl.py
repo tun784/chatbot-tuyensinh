@@ -31,7 +31,6 @@ def remove_symbols_and_emojis(text):
     return emoji_pattern.sub(r'', text)
 
 def clean_text_content(text):
-    # Lược bỏ đoạn từ "🔰 Phương thức tuyển sinh:" đến trước "🔰 Tổ hợp xét tuyển:"
     text = re.sub(
         r"Phương thức tuyển sinh:.*?(?=Tổ hợp xét tuyển:)", 
         "", 
@@ -39,7 +38,13 @@ def clean_text_content(text):
         flags=re.DOTALL
     )
     text = re.sub(r'\n{2,}', '\n', text)
-    # Loại bỏ footer (nếu có)
+    text = re.sub(
+        r'(2\. CƠ HỘI NGHỀ NGHIỆP.*?)(vị trí)',
+        lambda m: m.group(1) + 'công việc',
+        text,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL
+    )
     # text = re.split(r"---", text, flags=re.IGNORECASE)[0]
     text = re.split(r"5. QUYỀN LỢI CỦA NGƯỜI HỌC", text, flags=re.IGNORECASE)[0]
     # Loại bỏ icon và emoji
@@ -49,7 +54,8 @@ def clean_text_content(text):
     return text.strip()
 
 def remove_accents(text):
-    """Tạo tên file .txt loại bỏ dấu tiếng Việt."""
+    """Tạo tên file .txt loại bỏ dấu tiếng Việt, thay 'đ' thành 'd'."""
+    text = text.replace('đ', 'd').replace('Đ', 'D')
     return ''.join(
         c for c in unicodedata.normalize('NFD', text)
         if unicodedata.category(c) != 'Mn'
@@ -140,9 +146,11 @@ def crawl_all(urls, output_dir="dataset"):
 if __name__ == "__main__":
     danh_sach_url = [
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-thong-tin",
+        "https://ts.huit.edu.vn/nganh-dh/nganh-an-toan-thong-tin",
         "https://ts.huit.edu.vn/nganh-dh/nganh-marketing",
         "https://ts.huit.edu.vn/nganh-dh/nganh-ke-toan",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-co-dien-tu",
+        "https://ts.huit.edu.vn/nganh-dh/nganh-quan-tri-nha-hang-va-dich-vu-an-uong",
         "https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang",
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-sinh-hoc",
         "https://ts.huit.edu.vn/nganh-dh/nganh-luat-kinh-te",
@@ -159,6 +167,6 @@ if __name__ == "__main__":
         "https://ts.huit.edu.vn/nganh-dh/nganh-cong-nghe-ky-thuat-dieu-khien-va-tu-dong-hoa",
         "https://ts.huit.edu.vn/nganh-dh/nganh-tai-chinh-ngan-hang",
         "https://ts.huit.edu.vn/nganh-dh/nganh-ngon-ngu-anh",
-        "https://ts.huit.edu.vn/nganh-dh/nganh-an-toan-thong-tin",
+        "https://ts.huit.edu.vn/nganh-dh/nganh-ngon-ngu-trung-quoc",
     ]
     crawl_all(danh_sach_url)

@@ -23,14 +23,14 @@ qdrant-client
 numpy==1.26.4
 pandas==1.5.3
 scikit-learn==1.2.2
-ml-dtypes==0.4.0
+ml-dtypes==0.5.1
 tensorflow
-
-# API
-flask
 
 # HuggingFace Hub
 huggingface-hub
-protobuf
 tf-keras
+protobuf
 gTTS
+
+# API
+flask

@@ -1,23 +1,23 @@
+import torch
+import os
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 from langchain_community.vectorstores import Qdrant
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import LlamaCpp
-import torch
-import os
-
+from sentence_transformers import SentenceTransformer
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
 # Khai báo các biến cần thiết
 data_path = "dataset"
-qdrant_persistent_path = "qdrant_vector_store" # Directory for Qdrant to store data
+qdrant_persistent_path = "vector_store" # Directory for Qdrant to store data
 qdrant_collection_name = "collection"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
 
 # Định nghĩa kích thước chunk cho các loại file khác nhau
 CHUNK_CONFIG = {
-    "default": {"size": 2000, "overlap": 500}, # Kích thước mặc định cho các file ngành
+    "default": {"size": 1900, "overlap": 500}, # Kích thước mặc định cho các file ngành
     "gioi-thieu-chung.txt": {"size": 600, "overlap": 90},
     "thu-tuc-nhap-hoc.txt": {"size": 500, "overlap": 80},
     "diem-chuan-2024.txt": {"size": 500, "overlap": 80}

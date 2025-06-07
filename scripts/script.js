@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       span.textContent = message;
     } else {
       let i = 0;
-      const speed = 7; // Độ trễ giữa các ký tự (ms)
+      const speed = 10; // Độ trễ giữa các ký tự (ms)
       const typeWriter = () => {
         if (i < message.length) {
           span.textContent += message.charAt(i);

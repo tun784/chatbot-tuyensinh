@@ -1,5 +1,4 @@
-Điểm chuẩn của một số ngành tại Trường Đại học Công Thương TPHCM theo phương thức xét điểm thi THPT:
-Năm 2024
+Điểm chuẩn của một số ngành tại Trường Đại học Công Thương TPHCM theo phương thức xét điểm thi THPT năm 2024
 Công nghệ thông tin: 23.00
 Công nghệ kỹ thuật điện - điện tử: 18.00
 Kỹ thuật Nhiệt: 17.50
