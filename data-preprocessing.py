@@ -17,7 +17,7 @@ model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
 
 # Định nghĩa kích thước chunk cho các loại file khác nhau
 CHUNK_CONFIG = {
-    "default": {"size": 1900, "overlap": 500}, # Kích thước mặc định cho các file ngành
+    "default": {"size": 2000, "overlap": 500}, # Kích thước mặc định cho các file ngành
     "gioi-thieu-chung.txt": {"size": 600, "overlap": 90},
     "thu-tuc-nhap-hoc.txt": {"size": 500, "overlap": 80},
     "diem-chuan-2024.txt": {"size": 500, "overlap": 80}
