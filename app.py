@@ -18,7 +18,7 @@ os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 # Khai bao bien
 app = Flask(__name__)
 data_path = "dataset"
-number_get = 2
+number_get = 1
 AUDIO_FOLDER = "audio"
 
 model_GGUF = "models/vinallama-7b-chat_q5_0.gguf"
