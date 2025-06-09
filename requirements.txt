@@ -20,6 +20,7 @@ torchaudio
 # Qdrant
 qdrant-client
 
+gunicorn
 numpy==1.26.4
 pandas==1.5.3
 scikit-learn==1.2.2
