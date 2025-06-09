@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Qdrant, FAISS
+from langchain_community.vectorstores import Qdrant
 from qdrant_client import QdrantClient
 from langchain.llms.base import LLM
 from llama_cpp import Llama
@@ -17,17 +17,15 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 # Khai bao bien
 app = Flask(__name__)
-data_path = "dataset"
-number_get = 1
+number_get = 2
 AUDIO_FOLDER = "audio"
-
-model_GGUF = "models/vinallama-7b-chat_q5_0.gguf"
+model = "models/vinallama-7b-chat-Q8_0.gguf"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"  # Mô hình nhúng câu từ HuggingFace
 
 general_temperature = 0.01
-datapath = "vector_store"
-collection_path = "collection"
-max_token = 260
+qdrant_persistent_path = "vector_store"
+collection_path = "admissions_info"
+max_token = 365
 
 class LlamaCppWrapper(LLM):
     llama: Any = None
@@ -70,28 +68,20 @@ def read_vectors_db():
         model_name=model_sentence,
         model_kwargs={"device": "cuda" if torch.cuda.is_available() else "cpu"}
     )
-    print(f"Đang tải vector database từ: {datapath}, collection: {collection_path}")
-    if not os.path.exists(datapath):
-        print(f"LỖI: Đường dẫn lưu trữ {datapath} không tồn tại.")
-        return None
-
-    client = QdrantClient(path=datapath)
-
+    print(f"Đang tải vector database từ collection: {collection_path}")
+    client = QdrantClient(path=qdrant_persistent_path)
     try:
         collection_info = client.get_collection(collection_name=collection_path)
         if collection_info.points_count == 0:
             print(f"CẢNH BÁO: Collection Qdrant '{collection_path}' trống.")
     except Exception as e:
-        print(f"LỖI: Không thể lấy thông tin collection '{collection_path}'. Nó có thể chưa được tạo. Lỗi: {e}")
-        print("Hãy chắc chắn rằng bạn đã chạy 'prepare_vector_db.py' để tạo và điền dữ liệu vào collection.")
+        print(f"LỖI: Không thể lấy thông tin collection '{collection_path}'. Lỗi: {e}")
         return None
-
     db = Qdrant(
         client=client,
         collection_name=collection_path,
         embeddings=embedding_model
     )
-    print("Đã kết nối tới vector database.")
     return db
 
 def load_llm(model_gguf_path):
@@ -139,21 +129,21 @@ def chat():
         print("Bắt đầu đọc database...")
         db = read_vectors_db()
         if db is None:
-            return jsonify({"Không tìm thấy vector database"}), 500
-        print("Đã tải thành công vector database.")
+            print("Đã tải thành công vector database.")
+            return jsonify({"error": "Không tìm thấy vector database"}), 500
 
         print("Kiểm tra truy xuất context từ câu hỏi")
         docs = db.similarity_search(question, k=number_get)
         for i, doc in enumerate(docs):
             print(f"\n--- Kết quả {i+1} ---\n{doc.page_content}\n")
-
+        print("----------------------------------------------------------------")
         print("Tải mô hình LLM...")
-        llm = load_llm(model_GGUF)
+        llm = load_llm(model)
         if llm is None:
             return jsonify({"error": "Không thể tải mô hình LLM. Kiểm tra đường dẫn và cấu hình."}), 500
 
         template ="""<|im_start|>system\n
-            Bạn là một trợ lý tư vấn tuyển sinh. Sử dụng thông tin sau đây để trả lời câu hỏi. Nếu bạn không biết câu trả lời, chỉ cần trả lời những câu lịch sự như "Tôi thực sự xin lỗi, tôi không thể trả lời câu hỏi của bạn". Bạn đừng cố bịa ra câu trả lời, cũng đừng hallucinate. Trả lời câu hỏi dưới đây:\n
+            Bạn là một trợ lý tư vấn tuyển sinh của Trường Đại học Công Thương Thành phố Hồ Chí Minh, bạn đang tư vấn tuyển sinh cho người ta. Bạn sử dụng thông tin sau đây để trả lời câu hỏi. Nếu bạn không biết câu trả lời, chỉ cần trả lời những câu lịch sự như "Tôi thực sự xin lỗi, tôi không thể trả lời câu hỏi của bạn". Bạn đừng cố bịa ra câu trả lời, cũng đừng hallucinate. Trả lời câu hỏi dưới đây:\n
             {context}<|im_end|>\n
             <|im_start|>user\n
             {question}<|im_end|>\n

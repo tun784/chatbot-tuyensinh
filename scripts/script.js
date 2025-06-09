@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           // Sau khi hiện xong text, thêm nút phát âm thanh nếu có audioUrl
           if (audioUrl) {
+            // Nút play
             const playBtn = document.createElement("button");
             playBtn.className = "play-btn-img";
             playBtn.title = "Phát âm thanh";
@@ -53,12 +54,48 @@ document.addEventListener("DOMContentLoaded", function () {
             playBtn.onmouseout = () => {
               playBtn.querySelector("img").style.filter = "";
             };
+
+            // Nút pause
+            const pauseBtn = document.createElement("button");
+            pauseBtn.className = "play-btn-img";
+            pauseBtn.title = "Tạm dừng";
+            pauseBtn.style.background = "none";
+            pauseBtn.style.border = "none";
+            pauseBtn.style.outline = "none";
+            pauseBtn.style.cursor = "pointer";
+            pauseBtn.style.marginTop = "6px";
+            pauseBtn.style.marginLeft = "8px";
+            pauseBtn.style.display = "inline-flex";
+            pauseBtn.style.alignItems = "center";
+            pauseBtn.style.justifyContent = "center";
+            pauseBtn.style.width = "32px";
+            pauseBtn.style.height = "32px";
+            pauseBtn.style.padding = "0";
+            pauseBtn.innerHTML = `<img src='img/pause.svg' alt='Pause' style='width:28px;height:28px;transition:filter 0.2s;'>`;
+            pauseBtn.onmouseover = () => {
+              pauseBtn.querySelector("img").style.filter =
+                "brightness(0.7) drop-shadow(0 0 4px #007bff)";
+            };
+            pauseBtn.onmouseout = () => {
+              pauseBtn.querySelector("img").style.filter = "";
+            };
+
+            // Audio element (dùng chung cho play/pause)
+            let audio = null;
             playBtn.onclick = () => {
-              const audio = new Audio(audioUrl);
+              if (!audio) {
+                audio = new Audio(audioUrl);
+              }
               audio.play();
+            };
+            pauseBtn.onclick = () => {
+              if (audio) {
+                audio.pause();
+              }
             };
             div.appendChild(document.createElement("br"));
             div.appendChild(playBtn);
+            div.appendChild(pauseBtn);
           }
         }
       };
