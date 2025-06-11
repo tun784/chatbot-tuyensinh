@@ -80,6 +80,34 @@ document.addEventListener("DOMContentLoaded", function () {
               pauseBtn.querySelector("img").style.filter = "";
             };
 
+            // Nút copy
+            const copyBtn = document.createElement("button");
+            copyBtn.className = "play-btn-img";
+            copyBtn.title = "Sao chép nội dung";
+            copyBtn.style.background = "none";
+            copyBtn.style.border = "none";
+            copyBtn.style.outline = "none";
+            copyBtn.style.cursor = "pointer";
+            copyBtn.style.marginTop = "6px";
+            copyBtn.style.marginLeft = "8px";
+            copyBtn.style.display = "inline-flex";
+            copyBtn.style.alignItems = "center";
+            copyBtn.style.justifyContent = "center";
+            copyBtn.style.width = "32px";
+            copyBtn.style.height = "32px";
+            copyBtn.style.padding = "0";
+            copyBtn.innerHTML = `<img src='img/copy.svg' alt='Copy' style='width:28px;height:28px;transition:filter 0.2s;'>`;
+            copyBtn.onmouseover = () => {
+              copyBtn.querySelector("img").style.filter =
+                "brightness(0.7) drop-shadow(0 0 4px #007bff)";
+            };
+            copyBtn.onmouseout = () => {
+              copyBtn.querySelector("img").style.filter = "";
+            };
+            copyBtn.onclick = () => {
+              navigator.clipboard.writeText(message);
+            };
+
             // Audio element (dùng chung cho play/pause)
             let audio = null;
             playBtn.onclick = () => {
@@ -96,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
             div.appendChild(document.createElement("br"));
             div.appendChild(playBtn);
             div.appendChild(pauseBtn);
+            div.appendChild(copyBtn);
           }
         }
       };
