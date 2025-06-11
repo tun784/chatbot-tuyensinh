@@ -10,8 +10,8 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
 # Khai báo các biến cần thiết
-data_path = "dataset"  # Thư mục chứa các file .txt
-qdrant_persistent_path = "vector_store"  # Directory for Qdrant to store data
+data_path = "dataset"
+qdrant_persistent_path = "vector_store"
 collection_path = "admissions_info"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
 
@@ -57,7 +57,6 @@ def create_db_from_files():
                 with open(file_path, 'r', encoding='utf-8') as csvfile:
                     reader = csv.DictReader(csvfile)
                     for row in reader:
-                        # Tùy theo số cột, tạo mô tả phù hợp
                         if 'Điểm chuẩn' in row:  # 2023, 2024
                             text = f"Ngành {row['Tên ngành']} (Mã ngành: {row['Mã ngành']}), điểm chuẩn: {row['Điểm chuẩn']}"
                         elif 'Điểm chuẩn Điểm thi tốt nghiệp THPT' in row:  # 2022
@@ -71,7 +70,6 @@ def create_db_from_files():
                             )
                         else:
                             text = str(row)
-                        # Đưa vào all_chunks dưới dạng Document object
                         all_chunks.append(Document(page_content=text))
                 print(f" Đã chuyển {filename} thành {len(list(reader))} documents.")
         except Exception as e:

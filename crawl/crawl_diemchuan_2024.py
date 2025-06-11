@@ -31,8 +31,9 @@ def crawl_diemchuan_2024(url, output_file):
     os.makedirs('dataset', exist_ok=True)
     with open(os.path.join('dataset', output_file), "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["STT", "Mã ngành", "Tên ngành", "Điểm chuẩn"])
+        writer.writerow(["STT", "Mã ngành", "Tên ngành", "Điểm chuẩn", "Năm"])
         for row in data[1:]:  # Bỏ header
+            row.append("2024")
             writer.writerow(row)
     print(f"Đã lưu dữ liệu vào dataset/{output_file}")
 
