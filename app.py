@@ -1,23 +1,28 @@
-import torch
 import os
 import uuid
-from gtts import gTTS
-from flask import Flask, request, jsonify, send_from_directory
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Qdrant
-from qdrant_client import QdrantClient
-from langchain.llms.base import LLM
-from llama_cpp import Llama
-from typing import Optional, List, Any
 import random
 import string
+import torch
+from gtts import gTTS
+from flask_cors import CORS
+from llama_cpp import Llama
+from langchain.llms.base import LLM
+from qdrant_client import QdrantClient
+from typing import Optional, List, Any
+from langchain.chains import RetrievalQA
+from langchain.prompts import PromptTemplate
+from langchain_community.vectorstores import Qdrant
+from langchain_huggingface import HuggingFaceEmbeddings
+from flask import Flask, request, jsonify, send_from_directory
+
+app = Flask(__name__)
+CORS(app)
+
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+
 # Khai bao bien
-app = Flask(__name__)
-number_get = 2
+number_get = 1
 AUDIO_FOLDER = "audio"
 model = "models/vinallama-7b-chat-Q8_0.gguf"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
@@ -44,7 +49,7 @@ class LlamaCppWrapper(LLM):
             f16_kv=True,
             **kwargs
         )
-    
+
     def _call(self, prompt: str, stop: Optional[List[str]] = None) -> str:
         response = self.llama(
             prompt,
@@ -130,12 +135,12 @@ def create_prompt(template_model):
     return prompt
 
 def create_qa_chain(prompt, llm, db):
-    Retriever = db.as_retriever(search_kwargs={"k": number_get}) # number_get chỉ là một con số (số doc cần lấy)    
+    Retriever = db.as_retriever(search_kwargs={"k": number_get})  
     chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
         retriever=Retriever,
-        return_source_documents=True, # Đặt thành True để xem tài liệu nào đã được truy xuất
+        return_source_documents=True,
         chain_type_kwargs={'prompt': prompt}
     )
     return chain
@@ -151,7 +156,6 @@ def chat():
         print(f" Đã nhận câu hỏi: {question}")
         if not question:
             return jsonify({"error": "Câu hỏi không được để trống."}), 400
-        # Sử dụng lại database và model đã khởi tạo
         db = global_db
         llm = global_llm
         if db is None:
@@ -167,7 +171,7 @@ def chat():
         template ="""<|im_start|>system\n
             Bạn là một trợ lý tư vấn tuyển sinh của Trường Đại học Công Thương Thành phố Hồ Chí Minh, bạn đang tư vấn tuyển sinh cho học sinh và phụ huynh. 
             Bạn sử dụng thông tin sau đây để trả lời câu hỏi. Nếu bạn không biết câu trả lời, chỉ cần trả lời những câu lịch sự như "Tôi thực sự xin lỗi, tôi không thể trả lời câu hỏi của bạn". 
-            Bạn đừng cố bịa ra câu trả lời, cũng đừng hallucinate. Trả lời câu hỏi dưới đây:\n
+            Bạn đừng cố bịa ra câu trả lời, cũng đừng hallucinate. Đừng thêm câu trả lời thừa hoặc câu nói của bạn vào. Hãy trả lời câu hỏi dưới đây:\n
             {context}<|im_end|>\n
             <|im_start|>user\n
             {question}<|im_end|>\n

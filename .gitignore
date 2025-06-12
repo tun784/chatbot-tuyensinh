@@ -2,3 +2,4 @@ chatbot-env/
 .qdrant-initialized
 models/
 *.mp3
+*.exe
