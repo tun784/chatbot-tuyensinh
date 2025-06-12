@@ -9,15 +9,14 @@ from langchain_core.documents import Document
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
-# Khai báo các biến cần thiết
-data_path = "dataset"  # Thư mục chứa các file .txt
-qdrant_persistent_path = "vector_store"  # Directory for Qdrant to store data
+data_path = "dataset"
+qdrant_persistent_path = "vector_store"
 collection_path = "admissions_info"
 model_sentence = "sentence-transformers/all-MiniLM-L12-v2"
 
 # Định nghĩa kích thước chunk cho các loại file khác nhau
 CHUNK_CONFIG = {
-    "default": {"size": 3072, "overlap": 500}, # Kích thước mặc định cho các file ngành
+    "default": {"size": 2048, "overlap": 500}, # Kích thước mặc định cho các file ngành
     "gioi-thieu-chung.txt": {"size": 700, "overlap": 90},
     "thu-tuc-nhap-hoc.txt": {"size": 600, "overlap": 80},
 }
@@ -58,10 +57,10 @@ def create_db_from_files():
                     reader = csv.DictReader(csvfile)
                     for row in reader:
                         # Tùy theo số cột, tạo mô tả phù hợp
-                        if 'Điểm chuẩn' in row:  # 2023, 2024
+                        if 'Điểm chuẩn' in row:
                             text = f"Ngành {row['Tên ngành']} (Mã ngành: {row['Mã ngành']}), điểm chuẩn: {row['Điểm chuẩn']}, năm: {row.get('Năm', '')}"
                             all_chunks.append(Document(page_content=text, metadata={"nam": row.get("Năm", "")}))
-                        elif 'Điểm chuẩn Điểm thi tốt nghiệp THPT' in row:  # 2022
+                        elif 'Điểm chuẩn Điểm thi tốt nghiệp THPT' in row:
                             text = (
                                 f"Ngành {row['Tên ngành']} (Mã ngành: {row['Mã ngành']}), "
                                 f"Điểm chuẩn thi tốt nghiệp THPT: {row['Điểm chuẩn Điểm thi tốt nghiệp THPT']}, "

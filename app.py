@@ -176,16 +176,17 @@ def chat():
             <|im_start|>user\n
             {question}<|im_end|>\n
             <|im_start|>assistant"""
-        print("Tạo prompt từ template...")
         prompt = create_prompt(template)
         print("Tạo chuỗi LLM với truy xuất RAG...")
         llm_chain = create_qa_chain(prompt, llm, db)
+
         print("Bắt đầu trả lời câu hỏi...")
         answer = llm_chain.invoke({"query": question})
         filename = generate_audio_filename()
         path = os.path.join(AUDIO_FOLDER, filename)
         tts = gTTS(text=answer['result'], lang="vi")
         tts.save(path)
+        
         audio_url = f"/audio/{filename}"
         print("Trả kết quả về frontend...")
         print(f"Kết quả từ LLM: {answer}")
