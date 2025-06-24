@@ -12,7 +12,6 @@ if torch.cuda.is_available():
     print(f"Device count: {torch.cuda.device_count()}")
     print(f"Current device: {torch.cuda.current_device()}")
     print(f"Device name: {torch.cuda.get_device_name(torch.cuda.current_device())}")
-    # Kiểm tra VRAM (ví dụ, không phải là cách chính xác nhất nhưng cho ý tưởng)
     t = torch.cuda.get_device_properties(0)
     print(f"Total VRAM: {t.total_memory / (1024**3):.2f} GB")
 
